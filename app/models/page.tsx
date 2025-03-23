@@ -21,12 +21,12 @@ export default function ModelsPage() {
         "Simplistic design for low-poly optimization"
 
       ],
-      thumbnailImage: "/Images/Models/Boat/BoatTextured.jpg",
+      thumbnailImage: "/Images/Models/Boat/BoatTextured.JPG",
       images: [
-        { src: "/Images/Models/Boat/BoatTextured.jpg", alt: "Boat Model - Exterior hull view" },
-        { src: "/Images/Models/Boat/BoatUntextured.jpg", alt: "Boat Model - Cockpit interior" },
-        { src: "/Images/Models/Boat/BoatWireframe.jpg", alt: "Boat Model - Engine detail" },
-        { src: "/Images/Models/Boat/BoatWireframe2.jpg", alt: "Boat Model - Wireframe view" }
+        { src: "/Images/Models/Boat/BoatTextured.JPG", alt: "Boat Model - Exterior hull view" },
+        { src: "/Images/Models/Boat/BoatUntextured.JPG", alt: "Boat Model - Cockpit interior" },
+        { src: "/Images/Models/Boat/BoatWireframe.JPG", alt: "Boat Model - Engine detail" },
+        { src: "/Images/Models/Boat/BoatWireframe2.JPG", alt: "Boat Model - Wireframe view" }
       ],
       type: "model",
       splineUrl: "https://my.spline.design/boatmodel-18e273eae9b4e97008d048648bdb0b9c/",
@@ -93,12 +93,12 @@ export default function ModelsPage() {
         "Impact and damage decal textures",
         "Full PBR workflow with metallic/roughness maps"
       ],
-      thumbnailImage: "/Images/Models/Buff Character/Buff.jpg",
+      thumbnailImage: "/Images/Models/Buff Character/Buff.JPG",
       images: [
-        { src: "/Images/Models/Buff Character/Buff.jpg", alt: "Buff Character Model - Fantasy weapons display" },
-        { src: "/Images/Models/Buff Character/BuffUntextured.jpg", alt: "Buff Character Model - Sci-fi weapons display" },
-        { src: "/Images/Models/Buff Character/BuffWireframe.jpg", alt: "Buff Character Model - Detail shots of craftsmanship" },
-        { src: "/Images/Models/Buff Character/BuffWireframe2.jpg", alt: "Buff Character Model - Material variation examples" }
+        { src: "/Images/Models/Buff Character/Buff.JPG", alt: "Buff Character Model - Fantasy weapons display" },
+        { src: "/Images/Models/Buff Character/BuffUntextured.JPG", alt: "Buff Character Model - Sci-fi weapons display" },
+        { src: "/Images/Models/Buff Character/BuffWireframe.JPG", alt: "Buff Character Model - Detail shots of craftsmanship" },
+        { src: "/Images/Models/Buff Character/BuffWireframe2.JPG", alt: "Buff Character Model - Material variation examples" }
       ],
       type: "model",
       splineUrl: "https://my.spline.design/buffcharactermodel-de81e6f87823bfa9c6b3d1576bee8236/",
