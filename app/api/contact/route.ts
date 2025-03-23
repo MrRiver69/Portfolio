@@ -1,9 +1,8 @@
 import { NextResponse } from 'next/server';
-import nodemailer from 'nodemailer';
 
 export async function POST(request: Request) {
   try {
-    const { name, email, message, recipient } = await request.json();
+    const { name, email, message } = await request.json();
     
     // Validate form data
     if (!name || !email || !message) {
@@ -15,43 +14,30 @@ export async function POST(request: Request) {
 
     // Always use riversbenjamin5@gmail.com as the recipient
     const toEmail = 'riversbenjamin5@gmail.com';
+
+    // Send form data to Web3Forms API
+    const formData = new FormData();
+    formData.append('access_key', process.env.WEB3FORMS_ACCESS_KEY || '');
+    formData.append('name', name);
+    formData.append('email', email);
+    formData.append('message', message);
+    formData.append('from_name', 'Portfolio Contact Form');
+    formData.append('subject', `New Contact Form Message from ${name}`);
     
-    // Create nodemailer transporter
-    // Note: In production, you should store these credentials in environment variables
-    const transporter = nodemailer.createTransport({
-      service: 'gmail',  // or another service like 'outlook', 'yahoo', etc.
-      auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
-      },
+    const response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: formData
     });
+
+    const data = await response.json();
     
-    // Email content
-    const mailOptions = {
-      from: process.env.EMAIL_USER,
-      to: toEmail,
-      replyTo: email,
-      subject: `New Contact Form Message from ${name}`,
-      text: `
-        Name: ${name}
-        Email: ${email}
-        
-        Message:
-        ${message}
-      `,
-      html: `
-        <h3>New Contact Form Submission</h3>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Message:</strong></p>
-        <p>${message.replace(/\n/g, '<br>')}</p>
-      `,
-    };
-
-    // Send email
-    await transporter.sendMail(mailOptions);
-
-    return NextResponse.json({ message: 'Message sent successfully' }, { status: 200 });
+    if (data.success) {
+      console.log('Email sent successfully via Web3Forms');
+      return NextResponse.json({ message: 'Message sent successfully' }, { status: 200 });
+    } else {
+      console.error('Error from Web3Forms:', data.message);
+      throw new Error(data.message || 'Failed to send message');
+    }
   } catch (error) {
     console.error('Error sending email:', error);
     return NextResponse.json(
