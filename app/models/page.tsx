@@ -13,14 +13,13 @@ export default function ModelsPage() {
       title: "Boat Model",
       description: "Low-Poly Tug Boat Model.",
       longDescription: "This is a low-poly tug boat model that was created and textured in Blender.",
-      software: ["Blender"],
+      software: ["Blender", "Unity"],
       polygons: "2,900",
       features: [
-        "Fully modeled interior cockpit with controls",
-        "Animated engine thrusters with particle effects",
-        "Detailed undercarriage with landing gear",
-        "Separate LOD models for optimization",
-        "PBR texture maps for realistic materials"
+        "Fully modeled and textured in Blender",
+        "Used as the players boat in Sustainable Shores",
+        "Simplistic design for low-poly optimization"
+
       ],
       images: [
         { src: "/spaceship1.jpg", alt: "Boat Model - Exterior hull view" },
@@ -36,7 +35,7 @@ export default function ModelsPage() {
       title: "Oil Rig Model",
       description: "An original fantasy creature model with detailed sculpting and texturing for use in games and cinematics.",
       longDescription: "This original fantasy creature was designed for a dark fantasy RPG. The character combines elements of traditional folklore with unique design elements to create a memorable adversary. The model features high-resolution sculpting with particular attention to surface details like scales, wrinkles, and musculature. The texturing includes subsurface scattering maps for realistic skin rendering and custom displacement maps for fine details.",
-      software: ["ZBrush", "Maya", "Substance Painter"],
+      software: ["Blender", "Substance Painter", "Unity"],
       polygons: "2.5 million (high-poly) / 85,000 (game-ready)",
       features: [
         "Detailed anatomy with accurate musculature",
@@ -59,7 +58,7 @@ export default function ModelsPage() {
       title: "Japanese Tea Pot Model",
       description: "A modular urban environment set with multiple building types, street furniture, and vegetation.",
       longDescription: "This comprehensive urban environment asset pack was designed for open-world games and architectural visualization. The modular system includes multiple building types that can be combined to create diverse cityscapes, along with detailed street furniture, vehicles, and vegetation. All assets are optimized for real-time rendering while maintaining high visual fidelity.",
-      software: ["Blender", "Substance Designer", "Unity"],
+      software: ["Maya", "Substance Painter"],
       polygons: "Variable (1,000 - 15,000 per asset)",
       features: [
         "Modular building system with over 50 unique pieces",
@@ -98,8 +97,8 @@ export default function ModelsPage() {
         { src: "/weapons4.jpg", alt: "Buff Character Model - Material variation examples" }
       ],
       type: "model",
-      splineUrl: "https://my.spline.design/untitled-5fcddc50a63ad2d0ee81ec3aaa4b84d4/",
-      embeddedHtml: '<iframe src="https://my.spline.design/untitled-5fcddc50a63ad2d0ee81ec3aaa4b84d4/" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>'
+      splineUrl: "https://my.spline.design/buffcharactermodel-de81e6f87823bfa9c6b3d1576bee8236/",
+      embeddedHtml: "<iframe src='https://my.spline.design/buffcharactermodel-de81e6f87823bfa9c6b3d1576bee8236/' frameborder='0' width='100%' height='100%'></iframe>"
     },
     {
       title: "T-Rex Skull Model",
@@ -121,8 +120,8 @@ export default function ModelsPage() {
         { src: "/character4.jpg", alt: "T-Rex Skull Model - Texturing breakdown" }
       ],
       type: "model",
-      splineUrl: "https://my.spline.design/copyof3dbasicshapes-7c6b6f1f5ef04e835fdbcf4a5a8dc85b/",
-      embeddedHtml: '<iframe src="https://my.spline.design/copyof3dbasicshapes-7c6b6f1f5ef04e835fdbcf4a5a8dc85b/" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>'
+      splineUrl: "https://my.spline.design/trexskullmodel-f6584b3177f8ee36b58ef09e0c78c3ab/",
+      embeddedHtml: "<iframe src='https://my.spline.design/trexskullmodel-f6584b3177f8ee36b58ef09e0c78c3ab/' frameborder='0' width='100%' height='100%'></iframe>"
     },
     {
       title: "Vehicle Pack",
