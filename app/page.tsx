@@ -12,122 +12,148 @@ export default function Home() {
   // Sample projects and models data - these would normally be fetched from a database or API
   const gameProjects: GameProjectDetails[] = [
     {
-      title: "Cosmic Odyssey",
-      description: "A space exploration game with procedurally generated worlds. Players can explore different planets, discover alien species, and build their own space stations.",
-      longDescription: "Cosmic Odyssey is an open-world space exploration game where players embark on an interstellar journey through a vast, procedurally generated universe. As the captain of your own customizable spacecraft, you'll discover uncharted planets, encounter diverse alien civilizations, and unravel the mysteries of the cosmos. The game features a dynamic economy, complex diplomacy systems, and the ability to build and manage your own space stations and colonies.",
+      title: "Sustainable Shores",
+      description: "A fishing game with a focus on sustainability and conservation.",
+      longDescription: "Sustainable Shores is an open-world ocean exploration game where player, after getting lost at sea, finds an island with a starving population and must learn how to sustainable fish the area to prevent the island from starving.",
       technologies: ["Unity", "C#", "Blender"],
-      role: "Lead Game Designer & 3D Modeler",
+      role: "Lead 3D Modeler",
+      thumbnailImage: "/Images/Models/Boat/BoatTextured.JPG",
       features: [
-        "Procedurally generated solar systems with unique planets and moons",
-        "Dynamic weather and environmental systems",
-        "Complex space economy with trading, mining, and manufacturing",
-        "Base building and colony management",
-        "Multiple factions with diplomacy and reputation systems"
+        "Procedurally generated ocean wave system",
+        "Dynamic day and night cycle",
+        "Procedurally animated fish models",
+        "Logbook for caught fish history",
+        "Fishing mini-game mechanic"
       ],
       images: [
-        { src: "/cosmic1.jpg", alt: "Cosmic Odyssey - Spacecraft approaching a ringed planet" },
-        { src: "/cosmic2.jpg", alt: "Cosmic Odyssey - Space station exterior" },
-        { src: "/cosmic3.jpg", alt: "Cosmic Odyssey - Alien landscape with unique flora" },
-        { src: "/cosmic4.jpg", alt: "Cosmic Odyssey - Trading interface and economy screen" },
-        { src: "/cosmic5.jpg", alt: "Cosmic Odyssey - Character customization interface" }
+        { src: "/Images/Models/Boat/BoatTextured.JPG", alt: "Boat Model - Exterior hull view" },
+        { src: "/Images/Models/Boat/BoatUntextured.JPG", alt: "Boat Model - Cockpit interior" },
+        { src: "/Images/Models/Boat/BoatWireframe.JPG", alt: "Boat Model - Engine detail" },
+        { src: "/Images/Models/Boat/BoatWireframe.JPG", alt: "Boat Model - Engine detail" },
+        { src: "/Images/Models/Boat/BoatWireframe2.JPG", alt: "Boat Model - Wireframe view" }
       ],
       type: "game",
-      thumbnailImage: "/Images/Games/Cosmic_Odyssey/thumbnail.jpg"
     },
     {
-      title: "Mythic Realms",
-      description: "Fantasy RPG with dynamic character progression system. Set in a vast open world filled with magical creatures and ancient mysteries.",
-      longDescription: "Mythic Realms is an immersive fantasy RPG where players create their own hero and embark on an epic journey through a world shaped by ancient myths and legends. The game features a non-linear narrative that adapts to player choices, and a dynamic character progression system that allows for countless unique builds and playstyles. Explore forgotten ruins, battle legendary creatures, and uncover the secrets of a world on the brink of catastrophe.",
-      technologies: ["Unreal Engine", "Blueprint", "Maya"],
-      role: "Game Designer & Level Artist",
+      title: "Cyber Ninja",
+      description: "A game about a futuristic ninja.",
+      longDescription: "Cyber Ninja is a game about a ninja from the future who has the abilty to hack and take control of robotic devices.",
+      technologies: ["Unity", "C#", "Blender"],
+      role: "3D Artist and Level Designer",
+      thumbnailImage: "/Images/Models/Boat/BoatTextured.JPG",
       features: [
-        "Open world with diverse environments and biomes",
-        "Branching narrative with meaningful player choices",
-        "Advanced combat system with hundreds of abilities and spells",
-        "Crafting system with thousands of recipes",
-        "Extensive character customization and progression options"
+        "Fast paced puzzle platformer",
+        "Double jump",
+        "2D and 3D design elements",
+        "Speed runner aspects",
+        "Unique visuals and stylization"
       ],
       images: [
-        { src: "/mythic1.jpg", alt: "Mythic Realms - Character customization screen" },
-        { src: "/mythic2.jpg", alt: "Mythic Realms - Ancient temple dungeon" },
-        { src: "/mythic3.jpg", alt: "Mythic Realms - Combat with a dragon" },
-        { src: "/mythic4.jpg", alt: "Mythic Realms - Enchanted forest environment" },
-        { src: "/mythic5.jpg", alt: "Mythic Realms - Inventory and crafting system" }
+        { src: "/Images/Models/Boat/BoatTextured.JPG", alt: "Boat Model - Exterior hull view" },
+        { src: "/Images/Models/Boat/BoatUntextured.JPG", alt: "Boat Model - Cockpit interior" },
+        { src: "/Images/Models/Boat/BoatWireframe.JPG", alt: "Boat Model - Engine detail" },
+        { src: "/Images/Models/Boat/BoatWireframe.JPG", alt: "Boat Model - Engine detail" },
+        { src: "/Images/Models/Boat/BoatWireframe2.JPG", alt: "Boat Model - Wireframe view" }
       ],
       type: "game",
-      thumbnailImage: "/Images/Games/Mythic_Realms/thumbnail.jpg"
     },
     {
-      title: "Urban Legends",
-      description: "A narrative-driven adventure set in a dystopian cityscape. Players navigate a complex story with multiple endings based on their choices.",
-      longDescription: "Urban Legends is a story-rich adventure game set in a near-future dystopian metropolis where the line between reality and urban myth has blurred. As a journalist investigating a series of strange occurrences, players will interview witnesses, collect evidence, and make difficult moral choices that shape the narrative. The game features a unique 'truth system' where player decisions determine which version of reality ultimately prevails, leading to one of twelve possible endings.",
-      technologies: ["Unity", "C#", "ZBrush"],
-      role: "Narrative Designer & Environment Artist",
+      title: "Door Horror",
+      description: "A mirco puzzle horror experience.",
+      longDescription: "Door Horror is a short horror game where the player must solve a series of puzzles to unlock various doors to find the exit.",
+      technologies: ["Unity", "C#", "Blender", "Substance Painter"],
+      role: "Lead Programmer and Game Designer",
+      thumbnailImage: "/Images/Models/Boat/BoatTextured.JPG",
       features: [
-        "Branching narrative with twelve distinct endings",
-        "Investigation mechanics with evidence collection and analysis",
-        "Dialogue system with over 10,000 lines of voiced dialogue",
-        "Atmospheric dystopian city with distinct districts",
-        "Dynamic day/night cycle affecting gameplay and story events"
+        "Features four unique puzzles for the player to solve",
+        "Unique stylized model textures",
+        "Ramping difficulty curve and horror elements",
+        "Each level has a unique theme and atmosphere",
+        "Minimalistic UI and HUD"
       ],
       images: [
-        { src: "/urban1.jpg", alt: "Urban Legends - Neon-lit cityscape view" },
-        { src: "/urban2.jpg", alt: "Urban Legends - Character dialogue system" },
-        { src: "/urban3.jpg", alt: "Urban Legends - Evidence board investigation" },
-        { src: "/urban4.jpg", alt: "Urban Legends - Abandoned subway environment" },
-        { src: "/urban5.jpg", alt: "Urban Legends - Night club scene with unique lighting" }
+        { src: "/Images/Models/Boat/BoatTextured.JPG", alt: "Boat Model - Exterior hull view" },
+        { src: "/Images/Models/Boat/BoatUntextured.JPG", alt: "Boat Model - Cockpit interior" },
+        { src: "/Images/Models/Boat/BoatWireframe.JPG", alt: "Boat Model - Engine detail" },
+        { src: "/Images/Models/Boat/BoatWireframe.JPG", alt: "Boat Model - Engine detail" },
+        { src: "/Images/Models/Boat/BoatWireframe2.JPG", alt: "Boat Model - Wireframe view" }
       ],
       type: "game",
-      thumbnailImage: "/Images/Games/Urban_Legends/thumbnail.jpg"
     }
   ];
 
   const modelProjects: ModelProjectDetails[] = [
     {
-      title: "Sci-Fi Spaceship",
-      description: "A detailed model of a futuristic spaceship designed for the Cosmic Odyssey game. Features multiple textures and complex geometry.",
-      longDescription: "This high-fidelity spaceship model was designed as the player's main vessel for the Cosmic Odyssey game. The design combines sleek aerodynamics with functional elements to create a believable spacecraft. The model includes a fully detailed exterior hull with modular components, detailed cockpit interior, engine bay, and cargo hold. Multiple texture sets allow for ship customization in-game.",
-      software: ["Blender", "Substance Painter"],
-      polygons: "15,000",
+      title: "Buff Character Model",
+      description: "A set of fantasy and sci-fi weapons with detailed modeling and texturing for game assets.",
+      longDescription: "This weapons collection features a diverse range of both fantasy and sci-fi themed arms designed for action RPGs and first-person shooters. Each weapon has been crafted with meticulous attention to detail, with realistic materials and moving parts where appropriate. The collection includes swords, axes, futuristic firearms, and energy weapons, each with multiple texture variations.",
+      software: ["Maya", "Photo Shop"],
+      polygons: "8,000 - 15,000 per weapon",
       features: [
-        "Fully modeled interior spaces",
-        "PBR materials with wear and tear effects",
-        "Modular components for game customization",
-        "Rigged landing gear and moving parts",
-        "Optimized for real-time rendering"
+        "First-person and third-person optimized versions",
+        "Multiple material variations for each weapon",
+        "Animated components (triggers, magazines, etc.)",
+        "Impact and damage decal textures",
+        "Full PBR workflow with metallic/roughness maps"
       ],
-      thumbnailImage: "/Images/Models/Spaceship/thumbnail.jpg",
+      thumbnailImage: "/Images/Models/Buff Character/Buff.JPG",
       images: [
-        { src: "/spaceship1.jpg", alt: "Sci-Fi Spaceship - Exterior profile view" },
-        { src: "/spaceship2.jpg", alt: "Sci-Fi Spaceship - Cockpit interior detail" },
-        { src: "/spaceship3.jpg", alt: "Sci-Fi Spaceship - Engine thruster closeup" },
-        { src: "/spaceship4.jpg", alt: "Sci-Fi Spaceship - Wireframe view showing topology" },
-        { src: "/spaceship5.jpg", alt: "Sci-Fi Spaceship - Texture and materials breakdown" }
+        { src: "/Images/Models/Buff Character/Buff.JPG", alt: "Buff Character Model - Fantasy weapons display" },
+        { src: "/Images/Models/Buff Character/BuffUntextured.JPG", alt: "Buff Character Model - Sci-fi weapons display" },
+        { src: "/Images/Models/Buff Character/BuffWireframe.JPG", alt: "Buff Character Model - Detail shots of craftsmanship" },
+        { src: "/Images/Models/Buff Character/BuffWireframe2.JPG", alt: "Buff Character Model - Material variation examples" }
       ],
-      type: "model"
+      type: "model",
+      splineUrl: "https://my.spline.design/buffcharactermodel-de81e6f87823bfa9c6b3d1576bee8236/",
+      embeddedHtml: "<iframe src='https://my.spline.design/buffcharactermodel-de81e6f87823bfa9c6b3d1576bee8236/' frameborder='0' width='100%' height='100%'></iframe>"
     },
     {
-      title: "Fantasy Creature",
-      description: "A detailed character model created for Mythic Realms. This mythical creature combines elements of different animals with fantasy aesthetics.",
-      longDescription: "This fantasy creature was designed for the Mythic Realms game as one of the unique encounters in the enchanted forest biome. The design combines elements of deer, wolf, and mystical features to create a creature that feels both familiar and otherworldly. Special attention was paid to the anatomical structure, fur texturing, and animation rigging to ensure the creature moves naturally in-game.",
-      software: ["ZBrush", "Maya", "Substance Painter"],
-      polygons: "32,000",
+      title: "Japanese Tea Pot Model",
+      description: "A modular urban environment set with multiple building types, street furniture, and vegetation.",
+      longDescription: "This comprehensive urban environment asset pack was designed for open-world games and architectural visualization. The modular system includes multiple building types that can be combined to create diverse cityscapes, along with detailed street furniture, vehicles, and vegetation. All assets are optimized for real-time rendering while maintaining high visual fidelity.",
+      software: ["Maya", "Substance Painter"],
+      polygons: "Variable (1,000 - 15,000 per asset)",
       features: [
-        "Highly detailed sculpt with realistic anatomy",
-        "Advanced fur and skin texturing",
-        "Complete animation rig with facial expressions",
-        "Multiple texture variations for different biomes",
-        "LOD system for optimal game performance"
+        "Modular building system with over 50 unique pieces",
+        "PBR materials with environmental damage variations",
+        "Integrated LOD system for performance optimization",
+        "Seamless texture atlases for efficient memory usage",
+        "Ambient occlusion and light maps baked in"
       ],
-      thumbnailImage: "/Images/Models/Fantasy_Creature/thumbnail.jpg",
+      thumbnailImage: "/Images/Models/TeaPot/TeaPot.jpg",
       images: [
-        { src: "/fantasy-creature1.jpg", alt: "Fantasy Creature - Full model render in forest setting" },
-        { src: "/fantasy-creature2.jpg", alt: "Fantasy Creature - Close-up of head detail" },
-        { src: "/fantasy-creature3.jpg", alt: "Fantasy Creature - Wireframe showing topology" },
-        { src: "/fantasy-creature4.jpg", alt: "Fantasy Creature - Texture maps and materials" },
-        { src: "/fantasy-creature5.jpg", alt: "Fantasy Creature - Animation pose examples" }
+        { src: "/Images/Models/TeaPot/TeaPot.jpg", alt: "Japanese Tea Pot Model - Tea House Interior" },
+        { src: "/Images/Models/TeaPot/Untextured.jpg", alt: "Japanese Tea Pot Model - Untextured model" },
+        { src: "/Images/Models/TeaPot/Textured.jpg", alt: "Japanese Tea Pot Model - Textured model" },
+        { src: "/Images/Models/TeaPot/PostProcessed.jpg", alt: "Japanese Tea Pot Model - Tea House Environment" }
       ],
-      type: "model"
+      type: "model",
+      splineUrl: "https://my.spline.design/teapotmodel-daec9e3405c5da821d34e8d86ba7127f/",
+      embeddedHtml: "<iframe src='https://my.spline.design/teapotmodel-daec9e3405c5da821d34e8d86ba7127f/' frameborder='0' width='100%' height='100%'></iframe>"
+    },
+    {
+      title: "T-Rex Skull Model",
+      description: "A highly detailed character model created for a AAA game project with advanced rigging and skin weighting.",
+      longDescription: "This character model was designed for a major game title as one of the central player characters. The model features advanced facial topology for realistic expressions, meticulously crafted clothing with physics-enabled components, and a production-ready rig suitable for both gameplay and cinematic animations. Special attention was given to realistic skin texturing and hair rendering.",
+      software: ["Blender", "Substance Painter", "Unreal Engine"],
+      polygons: "80,000 (in-game model) / 5 million (cinematic version)",
+      features: [
+        "Advanced facial rigging with FACS-based blend shapes",
+        "Physically accurate clothing simulation",
+        "Detailed skin texturing with subsurface scattering",
+        "Complete animation-ready skeletal structure",
+        "Multiple outfit and accessory variations"
+      ],
+      thumbnailImage: "/Images/Models/T-Rex Skull/TrexSkull.jpg",
+      images: [
+        { src: "/Images/Models/T-Rex Skull/TrexSkull.jpg", alt: "T-Rex Skull Model - Full body turnaround" },
+        { src: "/Images/Models/T-Rex Skull/TrexHP.png", alt: "T-Rex Skull Model - Facial expression range" },
+        { src: "/Images/Models/T-Rex Skull/TrexHPWire.png", alt: "T-Rex Skull Model - Clothing detail" },
+        { src: "/Images/Models/T-Rex Skull/TrexWire.png", alt: "T-Rex Skull Model - Texturing breakdown" }
+      ],
+      type: "model",
+      splineUrl: "https://my.spline.design/trexskullmodel-f6584b3177f8ee36b58ef09e0c78c3ab/",
+      embeddedHtml: "<iframe src='https://my.spline.design/trexskullmodel-f6584b3177f8ee36b58ef09e0c78c3ab/' frameborder='0' width='100%' height='100%'></iframe>"
     }
   ];
   
@@ -161,6 +187,12 @@ export default function Home() {
       src: modelProjects[1].thumbnailImage || modelProjects[1].images[0].src,
       alt: modelProjects[1].title + " - " + modelProjects[1].description,
       id: 1, 
+      type: 'model' as const
+    },
+    {
+      src: modelProjects[2].thumbnailImage || modelProjects[2].images[0].src,
+      alt: modelProjects[2].title + " - " + modelProjects[2].description,
+      id: 2, 
       type: 'model' as const
     }
   ];
@@ -205,26 +237,10 @@ export default function Home() {
           <h2 className="text-2xl font-semibold mb-6 dark:text-white">Awards & Recognition</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-medium mb-2 dark:text-white">Best Indie Game Design</h3>
-              <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">Independent Game Developers Association, 2023</p>
+              <h3 className="text-xl font-medium mb-2 dark:text-white">Academic Excelence</h3>
+              <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">Griffith Award for Academic Excellence, 2024</p>
               <p className="text-gray-700 dark:text-gray-300">
-                Awarded for "Cosmic Odyssey" - recognized for innovative procedural generation techniques and player-driven narrative.
-              </p>
-            </div>
-            
-            <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-medium mb-2 dark:text-white">Excellence in 3D Character Modeling</h3>
-              <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">Digital Arts International Showcase, 2022</p>
-              <p className="text-gray-700 dark:text-gray-300">
-                Recognized for the creature design collection in "Mythic Realms" - praised for anatomical accuracy and fantasy aesthetics.
-              </p>
-            </div>
-            
-            <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-medium mb-2 dark:text-white">Rising Star in Game Development</h3>
-              <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">GameDev Spotlight Awards, 2021</p>
-              <p className="text-gray-700 dark:text-gray-300">
-                Selected as one of the top emerging talents in the indie game development scene for innovative approach to game mechanics and storytelling.
+                Awarded for a cumulative GPA of at least 6.0, calculated over the academic year.
               </p>
             </div>
           </div>
