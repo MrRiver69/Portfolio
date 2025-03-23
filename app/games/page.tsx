@@ -19,6 +19,7 @@ export default function GamesPage() {
       longDescription: "Sustainable Shores is an open-world ocean exploration game where player, after getting lost at sea, finds an island with a starving population and must learn how to sustainable fish the area to prevent the island from starving.",
       technologies: ["Unity", "C#", "Blender"],
       role: "Lead 3D Modeler",
+      thumbnailImage: "/Images/Games/Sustainable_Shores/thumbnail.jpg",
       features: [
         "Procedurally generated ocean wave system",
         "Dynamic day and night cycle",
@@ -41,6 +42,7 @@ export default function GamesPage() {
       longDescription: "Cyber Ninja is a game about a ninja from the future who has the abilty to hack and take control of robotic devices.",
       technologies: ["Unity", "C#", "Blender"],
       role: "3D Artist and Level Designer",
+      thumbnailImage: "/Images/Games/Cyber_Ninja/thumbnail.jpg",
       features: [
         "Fast paced puzzle platformer",
         "Double jump",
@@ -63,6 +65,7 @@ export default function GamesPage() {
       longDescription: "Door Horror is a short horror game where the player must solve a series of puzzles to unlock various doors to find the exit.",
       technologies: ["Unity", "C#", "Blender", "Substance Painter"],
       role: "Lead Programmer and Game Designer",
+      thumbnailImage: "/Images/Games/Door_Horror/thumbnail.jpg",
       features: [
         "Features four unique puzzles for the player to solve",
         "Unique stylized model textures",
@@ -85,6 +88,7 @@ export default function GamesPage() {
       longDescription: "A space moment is a short expeirence that aims to capture the feeling of being in space within the player.",
       technologies: ["Unity", "C#", "Blender"],
       role: "Solo Developer",
+      thumbnailImage: "/Images/Games/Space_Moment/thumbnail.jpg",
       features: [
         "A space atmospheric feeling",
         "Simplistic game mechanics",
@@ -107,6 +111,7 @@ export default function GamesPage() {
       longDescription: "The lagoon experience is a short experience that aims to capture the feeling of being in the Brisbane Southbank lagoon, with three unique interactions for the player to experience.",
       technologies: ["UE5", "Blueprint"],
       role: "Solo Developer",
+      thumbnailImage: "/Images/Games/Lagoon_Experience/thumbnail.jpg",
       features: [
         "Virtual Reality experience",
         "Advanced water simulation interactions",
@@ -141,10 +146,29 @@ export default function GamesPage() {
             <div 
               key={index} 
               onClick={() => setSelectedGame(game)}
-              className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow cursor-pointer"
+              className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transform transition-all hover:-translate-y-1 cursor-pointer"
             >
-              <div className="aspect-video bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
-                <p className="text-gray-600 dark:text-gray-300">[{game.images[0].alt}]</p>
+              <div className="aspect-video bg-gray-200 dark:bg-gray-700 flex items-center justify-center relative overflow-hidden">
+                {((game.thumbnailImage || (game.images && game.images.length > 0))) ? (
+                  <img 
+                    src={game.thumbnailImage || game.images[0].src}
+                    alt={game.title}
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.style.display = 'none';
+                      const container = target.parentElement;
+                      if (container) {
+                        const fallback = document.createElement('p');
+                        fallback.className = 'text-gray-600 dark:text-gray-300';
+                        fallback.textContent = `[${game.title}]`;
+                        container.appendChild(fallback);
+                      }
+                    }}
+                  />
+                ) : (
+                  <p className="text-gray-600 dark:text-gray-300">[{game.title}]</p>
+                )}
               </div>
               <div className="p-4">
                 <h3 className="font-semibold text-lg mb-2 dark:text-white">{game.title}</h3>

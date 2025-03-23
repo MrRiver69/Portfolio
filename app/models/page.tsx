@@ -21,11 +21,12 @@ export default function ModelsPage() {
         "Simplistic design for low-poly optimization"
 
       ],
+      thumbnailImage: "/Images/Models/Boat/thumbnail.jpg",
       images: [
-        { src: "/spaceship1.jpg", alt: "Boat Model - Exterior hull view" },
-        { src: "/spaceship2.jpg", alt: "Boat Model - Cockpit interior" },
-        { src: "/spaceship3.jpg", alt: "Boat Model - Engine detail" },
-        { src: "/spaceship4.jpg", alt: "Boat Model - Wireframe view" }
+        { src: "/Images/Models/Boat/view1.jpg", alt: "Boat Model - Exterior hull view" },
+        { src: "/Images/Models/Boat/view2.jpg", alt: "Boat Model - Cockpit interior" },
+        { src: "/Images/Models/Boat/view3.jpg", alt: "Boat Model - Engine detail" },
+        { src: "/Images/Models/Boat/view4.jpg", alt: "Boat Model - Wireframe view" }
       ],
       type: "model",
       splineUrl: "https://my.spline.design/boatmodel-18e273eae9b4e97008d048648bdb0b9c/",
@@ -44,11 +45,12 @@ export default function ModelsPage() {
         "Multiple texture variations",
         "Game-ready version with normal maps baked from high-poly model"
       ],
+      thumbnailImage: "/Images/Models/Oil_Rig/thumbnail.jpg",
       images: [
-        { src: "/creature1.jpg", alt: "Oil Rig Model - Full character view" },
-        { src: "/creature2.jpg", alt: "Oil Rig Model - Detail of face and head" },
-        { src: "/creature3.jpg", alt: "Oil Rig Model - Texture breakdown" },
-        { src: "/creature4.jpg", alt: "Oil Rig Model - Wireframe and topology" }
+        { src: "/Images/Models/Oil_Rig/view1.jpg", alt: "Oil Rig Model - Full character view" },
+        { src: "/Images/Models/Oil_Rig/view2.jpg", alt: "Oil Rig Model - Detail of face and head" },
+        { src: "/Images/Models/Oil_Rig/view3.jpg", alt: "Oil Rig Model - Texture breakdown" },
+        { src: "/Images/Models/Oil_Rig/view4.jpg", alt: "Oil Rig Model - Wireframe and topology" }
       ],
       type: "model",
       splineUrl: "https://my.spline.design/oilrigmodelcopy-8e96cf1b7ca5e7fed09dbc3183777984/",
@@ -67,11 +69,12 @@ export default function ModelsPage() {
         "Seamless texture atlases for efficient memory usage",
         "Ambient occlusion and light maps baked in"
       ],
+      thumbnailImage: "/Images/Models/TeaPot/TeaPot.jpg",
       images: [
-        { src: "/urban1.jpg", alt: "Japanese Tea Pot Model - City block overview" },
-        { src: "/urban2.jpg", alt: "Japanese Tea Pot Model - Street level detail" },
-        { src: "/urban3.jpg", alt: "Japanese Tea Pot Model - Building modular pieces" },
-        { src: "/urban4.jpg", alt: "Japanese Tea Pot Model - Texture sets and materials" }
+        { src: "/Images/Models/TeaPot/TeaPot.jpg", alt: "Japanese Tea Pot Model - Tea House Interior" },
+        { src: "/Images/Models/TeaPot/Untextured.jpg", alt: "Japanese Tea Pot Model - Untextured model" },
+        { src: "/Images/Models/TeaPot/Textured.jpg", alt: "Japanese Tea Pot Model - Textured model" },
+        { src: "/Images/Models/TeaPot/PostProcessed.jpg", alt: "Japanese Tea Pot Model - Tea House Environment" }
       ],
       type: "model",
       splineUrl: "https://my.spline.design/teapotmodel-daec9e3405c5da821d34e8d86ba7127f/",
@@ -81,7 +84,7 @@ export default function ModelsPage() {
       title: "Buff Character Model",
       description: "A set of fantasy and sci-fi weapons with detailed modeling and texturing for game assets.",
       longDescription: "This weapons collection features a diverse range of both fantasy and sci-fi themed arms designed for action RPGs and first-person shooters. Each weapon has been crafted with meticulous attention to detail, with realistic materials and moving parts where appropriate. The collection includes swords, axes, futuristic firearms, and energy weapons, each with multiple texture variations.",
-      software: ["Blender", "Substance Painter", "Marmoset Toolbag"],
+      software: ["Maya", "Photo Shop"],
       polygons: "8,000 - 15,000 per weapon",
       features: [
         "First-person and third-person optimized versions",
@@ -90,11 +93,12 @@ export default function ModelsPage() {
         "Impact and damage decal textures",
         "Full PBR workflow with metallic/roughness maps"
       ],
+      thumbnailImage: "/Images/Models/Buff_Character/thumbnail.jpg",
       images: [
-        { src: "/weapons1.jpg", alt: "Buff Character Model - Fantasy weapons display" },
-        { src: "/weapons2.jpg", alt: "Buff Character Model - Sci-fi weapons display" },
-        { src: "/weapons3.jpg", alt: "Buff Character Model - Detail shots of craftsmanship" },
-        { src: "/weapons4.jpg", alt: "Buff Character Model - Material variation examples" }
+        { src: "/Images/Models/Buff_Character/view1.jpg", alt: "Buff Character Model - Fantasy weapons display" },
+        { src: "/Images/Models/Buff_Character/view2.jpg", alt: "Buff Character Model - Sci-fi weapons display" },
+        { src: "/Images/Models/Buff_Character/view3.jpg", alt: "Buff Character Model - Detail shots of craftsmanship" },
+        { src: "/Images/Models/Buff_Character/view4.jpg", alt: "Buff Character Model - Material variation examples" }
       ],
       type: "model",
       splineUrl: "https://my.spline.design/buffcharactermodel-de81e6f87823bfa9c6b3d1576bee8236/",
@@ -104,7 +108,7 @@ export default function ModelsPage() {
       title: "T-Rex Skull Model",
       description: "A highly detailed character model created for a AAA game project with advanced rigging and skin weighting.",
       longDescription: "This character model was designed for a major game title as one of the central player characters. The model features advanced facial topology for realistic expressions, meticulously crafted clothing with physics-enabled components, and a production-ready rig suitable for both gameplay and cinematic animations. Special attention was given to realistic skin texturing and hair rendering.",
-      software: ["ZBrush", "Maya", "Substance Painter", "Marvelous Designer"],
+      software: ["Blender", "Substance Painter", "Unreal Engine"],
       polygons: "80,000 (in-game model) / 5 million (cinematic version)",
       features: [
         "Advanced facial rigging with FACS-based blend shapes",
@@ -113,39 +117,18 @@ export default function ModelsPage() {
         "Complete animation-ready skeletal structure",
         "Multiple outfit and accessory variations"
       ],
+      thumbnailImage: "/Images/Models/T-Rex_Skull/thumbnail.jpg",
       images: [
-        { src: "/character1.jpg", alt: "T-Rex Skull Model - Full body turnaround" },
-        { src: "/character2.jpg", alt: "T-Rex Skull Model - Facial expression range" },
-        { src: "/character3.jpg", alt: "T-Rex Skull Model - Clothing detail" },
-        { src: "/character4.jpg", alt: "T-Rex Skull Model - Texturing breakdown" }
+        { src: "/Images/Models/T-Rex_Skull/view1.jpg", alt: "T-Rex Skull Model - Full body turnaround" },
+        { src: "/Images/Models/T-Rex_Skull/view2.jpg", alt: "T-Rex Skull Model - Facial expression range" },
+        { src: "/Images/Models/T-Rex_Skull/view3.jpg", alt: "T-Rex Skull Model - Clothing detail" },
+        { src: "/Images/Models/T-Rex_Skull/view4.jpg", alt: "T-Rex Skull Model - Texturing breakdown" }
       ],
       type: "model",
       splineUrl: "https://my.spline.design/trexskullmodel-f6584b3177f8ee36b58ef09e0c78c3ab/",
       embeddedHtml: "<iframe src='https://my.spline.design/trexskullmodel-f6584b3177f8ee36b58ef09e0c78c3ab/' frameborder='0' width='100%' height='100%'></iframe>"
-    },
-    {
-      title: "Vehicle Pack",
-      description: "A collection of detailed vehicle models with interior and exterior detailing for racing and open-world games.",
-      longDescription: "This comprehensive vehicle pack includes 10 highly detailed cars ranging from everyday sedans to exotic supercars. Each vehicle features a fully modeled interior with functional dashboard elements, realistic materials, and accurate proportions based on real-world references. The vehicles are rigged with animated wheels, suspension systems, and opening components like doors and hoods.",
-      software: ["3ds Max", "Substance Painter", "Unreal Engine"],
-      polygons: "100,000 - 200,000 per vehicle",
-      features: [
-        "Detailed exterior modeling with manufacturer-accurate details",
-        "Fully modeled interiors with animated controls",
-        "PBR materials with metallic flake paint options",
-        "Animated suspension and steering systems",
-        "Damage model variations for gameplay"
-      ],
-      images: [
-        { src: "/vehicles1.jpg", alt: "Vehicle Pack - Sports car exterior" },
-        { src: "/vehicles2.jpg", alt: "Vehicle Pack - Detailed interior dashboard" },
-        { src: "/vehicles3.jpg", alt: "Vehicle Pack - Wheel and suspension detail" },
-        { src: "/vehicles4.jpg", alt: "Vehicle Pack - Multiple vehicle lineup" }
-      ],
-      type: "model",
-      splineUrl: "https://my.spline.design/untitled-8cd2c673fd8ac45a6e37e07f58ddc1f3/",
-      embeddedHtml: '<iframe src="https://my.spline.design/untitled-8cd2c673fd8ac45a6e37e07f58ddc1f3/" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>'
     }
+    
       
   ];
 
@@ -166,8 +149,27 @@ export default function ModelsPage() {
               className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden cursor-pointer transform transition-all hover:-translate-y-1 hover:shadow-lg"
               onClick={() => setSelectedModel(index)}
             >
-              <div className="h-48 bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
-                <p className="text-gray-600 dark:text-gray-300">[Model Render]</p>
+              <div className="h-48 bg-gray-200 dark:bg-gray-700 flex items-center justify-center relative overflow-hidden">
+                {((model.thumbnailImage || (model.images && model.images.length > 0))) ? (
+                  <img 
+                    src={model.thumbnailImage || model.images[0].src}
+                    alt={model.title}
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.style.display = 'none';
+                      const container = target.parentElement;
+                      if (container) {
+                        const fallback = document.createElement('p');
+                        fallback.className = 'text-gray-600 dark:text-gray-300';
+                        fallback.textContent = '[Model Render]';
+                        container.appendChild(fallback);
+                      }
+                    }}
+                  />
+                ) : (
+                  <p className="text-gray-600 dark:text-gray-300">[Model Render]</p>
+                )}
               </div>
               <div className="p-6">
                 <h2 className="text-xl font-semibold mb-2 dark:text-white">{model.title}</h2>

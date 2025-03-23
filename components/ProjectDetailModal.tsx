@@ -2,7 +2,6 @@
 
 import { useState, useRef, useEffect } from 'react';
 import Modal from './Modal';
-import Image from 'next/image';
 
 export interface ProjectImage {
   src: string;
@@ -21,6 +20,7 @@ export interface GameProjectDetails extends BaseProjectDetails {
   technologies: string[];
   role: string;
   type: 'game';
+  thumbnailImage?: string;
 }
 
 export interface ModelProjectDetails extends BaseProjectDetails {
@@ -29,6 +29,7 @@ export interface ModelProjectDetails extends BaseProjectDetails {
   type: 'model';
   splineUrl?: string;
   embeddedHtml?: string;
+  thumbnailImage?: string;
 }
 
 export type ProjectDetails = GameProjectDetails | ModelProjectDetails;
@@ -137,13 +138,31 @@ export default function ProjectDetailModal({ isOpen, onClose, project }: Project
                   <div className="absolute bottom-0 left-0 right-0 h-8 bg-gray-200 dark:bg-gray-700 z-10"></div>
                 </div>
               ) : (
-                <div className="flex items-center justify-center h-full">
-                  <div className="text-center">
-                    <p className="text-gray-600 dark:text-gray-300 mb-2">Image Preview</p>
-                    <p className="text-gray-500 dark:text-gray-400 text-sm">
-                      {project.images[isTransitioning && targetThumbnail !== null ? targetThumbnail : activeImageIndex].alt}
-                    </p>
-                  </div>
+                <div className="relative w-full h-full flex items-center justify-center">
+                  <img
+                    src={project.images[isTransitioning && targetThumbnail !== null ? targetThumbnail : activeImageIndex].src}
+                    alt={project.images[isTransitioning && targetThumbnail !== null ? targetThumbnail : activeImageIndex].alt}
+                    className="max-w-full max-h-full p-4 object-contain"
+                    onError={(e) => {
+                      console.error('Error loading image:', 
+                        project.images[isTransitioning && targetThumbnail !== null ? targetThumbnail : activeImageIndex].src);
+                      // Show fallback content on error
+                      const target = e.target as HTMLImageElement;
+                      target.style.display = 'none';
+                      const container = target.parentElement;
+                      if (container) {
+                        const fallback = document.createElement('div');
+                        fallback.className = 'text-center';
+                        fallback.innerHTML = `
+                          <p class="text-gray-600 dark:text-gray-300 mb-2">Failed to load image</p>
+                          <p class="text-gray-500 dark:text-gray-400 text-sm">
+                            Path: ${project.images[isTransitioning && targetThumbnail !== null ? targetThumbnail : activeImageIndex].src}
+                          </p>
+                        `;
+                        container.appendChild(fallback);
+                      }
+                    }}
+                  />
                 </div>
               )}
             </div>
@@ -187,11 +206,25 @@ export default function ProjectDetailModal({ isOpen, onClose, project }: Project
                   !showSpline && idx === activeImageIndex ? 'ring-2 ring-blue-500' : ''
                 }`}
               >
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-full h-full bg-gray-300 dark:bg-gray-600 flex items-center justify-center">
-                    <span className="text-xs text-gray-700 dark:text-gray-200 text-center px-1">
-                      {idx + 1}
-                    </span>
+                <div className="absolute inset-0">
+                  <div className="relative w-full h-full">
+                    <img
+                      src={image.src}
+                      alt={`Thumbnail ${idx + 1}`}
+                      className="w-full h-full object-cover"
+                      onError={(e) => {
+                        console.error('Error loading thumbnail:', image.src);
+                        const target = e.target as HTMLImageElement;
+                        target.style.display = 'none';
+                        const container = target.parentElement;
+                        if (container) {
+                          const fallback = document.createElement('div');
+                          fallback.className = 'w-full h-full bg-gray-300 dark:bg-gray-600 flex items-center justify-center';
+                          fallback.innerHTML = `<span class="text-xs text-gray-700 dark:text-gray-200 text-center px-1">${idx + 1}</span>`;
+                          container.appendChild(fallback);
+                        }
+                      }}
+                    />
                   </div>
                 </div>
               </button>

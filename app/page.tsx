@@ -9,40 +9,6 @@ import ProjectDetailModal, { GameProjectDetails, ModelProjectDetails } from "@/c
 export default function Home() {
   const [selectedProject, setSelectedProject] = useState<{ id: number, type: 'game' | 'model' } | null>(null);
   
-  // Featured projects for the carousel
-  const featuredProjects = [
-    {
-      src: "/project1.jpg",
-      alt: "Cosmic Odyssey - A space exploration game with procedurally generated worlds",
-      id: 0,
-      type: 'game' as const
-    },
-    {
-      src: "/project2.jpg",
-      alt: "Mythic Realms - Fantasy RPG with dynamic character progression system",
-      id: 1,
-      type: 'game' as const
-    },
-    {
-      src: "/project3.jpg",
-      alt: "Urban Legends - A narrative-driven adventure set in a dystopian cityscape",
-      id: 2,
-      type: 'game' as const
-    },
-    {
-      src: "/spaceship1.jpg",
-      alt: "Sci-Fi Spaceship - Detailed model for the Cosmic Odyssey game",
-      id: 0,
-      type: 'model' as const
-    },
-    {
-      src: "/fantasy-creature.jpg",
-      alt: "Fantasy Creature - Detailed character model for Mythic Realms",
-      id: 1, 
-      type: 'model' as const
-    }
-  ];
-
   // Sample projects and models data - these would normally be fetched from a database or API
   const gameProjects: GameProjectDetails[] = [
     {
@@ -65,7 +31,8 @@ export default function Home() {
         { src: "/cosmic4.jpg", alt: "Cosmic Odyssey - Trading interface and economy screen" },
         { src: "/cosmic5.jpg", alt: "Cosmic Odyssey - Character customization interface" }
       ],
-      type: "game"
+      type: "game",
+      thumbnailImage: "/Images/Games/Cosmic_Odyssey/thumbnail.jpg"
     },
     {
       title: "Mythic Realms",
@@ -87,7 +54,8 @@ export default function Home() {
         { src: "/mythic4.jpg", alt: "Mythic Realms - Enchanted forest environment" },
         { src: "/mythic5.jpg", alt: "Mythic Realms - Inventory and crafting system" }
       ],
-      type: "game"
+      type: "game",
+      thumbnailImage: "/Images/Games/Mythic_Realms/thumbnail.jpg"
     },
     {
       title: "Urban Legends",
@@ -109,7 +77,8 @@ export default function Home() {
         { src: "/urban4.jpg", alt: "Urban Legends - Abandoned subway environment" },
         { src: "/urban5.jpg", alt: "Urban Legends - Night club scene with unique lighting" }
       ],
-      type: "game"
+      type: "game",
+      thumbnailImage: "/Images/Games/Urban_Legends/thumbnail.jpg"
     }
   ];
 
@@ -127,6 +96,7 @@ export default function Home() {
         "Rigged landing gear and moving parts",
         "Optimized for real-time rendering"
       ],
+      thumbnailImage: "/Images/Models/Spaceship/thumbnail.jpg",
       images: [
         { src: "/spaceship1.jpg", alt: "Sci-Fi Spaceship - Exterior profile view" },
         { src: "/spaceship2.jpg", alt: "Sci-Fi Spaceship - Cockpit interior detail" },
@@ -149,6 +119,7 @@ export default function Home() {
         "Multiple texture variations for different biomes",
         "LOD system for optimal game performance"
       ],
+      thumbnailImage: "/Images/Models/Fantasy_Creature/thumbnail.jpg",
       images: [
         { src: "/fantasy-creature1.jpg", alt: "Fantasy Creature - Full model render in forest setting" },
         { src: "/fantasy-creature2.jpg", alt: "Fantasy Creature - Close-up of head detail" },
@@ -157,6 +128,40 @@ export default function Home() {
         { src: "/fantasy-creature5.jpg", alt: "Fantasy Creature - Animation pose examples" }
       ],
       type: "model"
+    }
+  ];
+  
+  // Featured projects for the carousel
+  const featuredProjects = [
+    {
+      src: gameProjects[0].thumbnailImage || gameProjects[0].images[0].src,
+      alt: gameProjects[0].title + " - " + gameProjects[0].description,
+      id: 0,
+      type: 'game' as const
+    },
+    {
+      src: gameProjects[1].thumbnailImage || gameProjects[1].images[0].src,
+      alt: gameProjects[1].title + " - " + gameProjects[1].description,
+      id: 1,
+      type: 'game' as const
+    },
+    {
+      src: gameProjects[2].thumbnailImage || gameProjects[2].images[0].src,
+      alt: gameProjects[2].title + " - " + gameProjects[2].description,
+      id: 2,
+      type: 'game' as const
+    },
+    {
+      src: modelProjects[0].thumbnailImage || modelProjects[0].images[0].src,
+      alt: modelProjects[0].title + " - " + modelProjects[0].description,
+      id: 0,
+      type: 'model' as const
+    },
+    {
+      src: modelProjects[1].thumbnailImage || modelProjects[1].images[0].src,
+      alt: modelProjects[1].title + " - " + modelProjects[1].description,
+      id: 1, 
+      type: 'model' as const
     }
   ];
 

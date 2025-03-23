@@ -55,8 +55,26 @@ export default function Carousel({ images, onImageClick }: CarouselProps) {
         className={`relative h-[400px] overflow-hidden rounded-md ${isClickable ? 'cursor-pointer' : ''}`}
         onClick={isClickable ? handleImageClick : undefined}
       >
-        <div className="w-full h-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center">
-          <p className="text-gray-700 dark:text-gray-300">{images[currentIndex].alt}</p>
+        <div className="w-full h-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center relative">
+          <img 
+            src={images[currentIndex].src}
+            alt={images[currentIndex].alt}
+            className="w-full h-full object-cover"
+            onError={(e) => {
+              const target = e.target as HTMLImageElement;
+              target.style.display = 'none';
+              const container = target.parentElement;
+              if (container) {
+                const fallback = document.createElement('p');
+                fallback.className = 'text-gray-700 dark:text-gray-300';
+                fallback.textContent = images[currentIndex].alt;
+                container.appendChild(fallback);
+              }
+            }}
+          />
+          <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-4">
+            <p className="text-white text-sm">{images[currentIndex].alt}</p>
+          </div>
         </div>
       </div>
       
