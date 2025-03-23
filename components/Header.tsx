@@ -42,7 +42,7 @@ export default function Header() {
               ))}
               <li>
                 <a 
-                  href="https://linkedin.com" 
+                  href="https://www.linkedin.com/in/ben-rivers-881b72233/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-block"
