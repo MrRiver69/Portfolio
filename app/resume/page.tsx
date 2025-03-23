@@ -14,7 +14,7 @@ export default function ResumePage() {
           <div className="text-center mb-8 border-b pb-6 border-gray-200 dark:border-gray-700">
             <h1 className="text-3xl font-bold dark:text-white mb-2">Benjamin Rivers</h1>
             <p className="text-gray-600 dark:text-gray-400">
-              2 Normanby Terrace, Kelvin Grove, QLD • <a href="mailto:riversbenjaim@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline">riversbenjaim@gmail.com</a> • +04 0394 4818
+              2 Normanby Terrace, Kelvin Grove, QLD • <a href="mailto:riversbenjamin5@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline">riversbenjamin5@gmail.com</a> • +04 0394 4818
             </p>
           </div>
           

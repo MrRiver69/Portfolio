@@ -16,6 +16,8 @@ export default function ContactPage() {
     isSuccess: false
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({
@@ -24,24 +26,46 @@ export default function ContactPage() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real application, you would send this data to your backend
-    console.log('Form submitted:', formData);
+    setIsSubmitting(true);
     
-    // Simulate a successful form submission
-    setFormStatus({
-      message: 'Thanks for your message! I\'ll get back to you soon.',
-      isError: false,
-      isSuccess: true
-    });
-    
-    // Reset form fields
-    setFormData({
-      name: '',
-      email: '',
-      message: ''
-    });
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+      
+      if (response.ok) {
+        setFormStatus({
+          message: "Thanks for your message! I'll get back to you soon.",
+          isError: false,
+          isSuccess: true
+        });
+        
+        // Reset form fields
+        setFormData({
+          name: '',
+          email: '',
+          message: ''
+        });
+      } else {
+        const errorData = await response.json();
+        throw new Error(errorData.message || 'Something went wrong');
+      }
+    } catch (error) {
+      console.error('Error sending message:', error);
+      setFormStatus({
+        message: error instanceof Error ? error.message : 'Failed to send message. Please try again.',
+        isError: true,
+        isSuccess: false
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -112,25 +136,26 @@ export default function ContactPage() {
             <button
               type="submit"
               className="px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
+              disabled={isSubmitting}
             >
-              Send Message
+              {isSubmitting ? 'Sending...' : 'Send Message'}
             </button>
           </form>
           
           <div className="mt-8 pt-6 border-t dark:border-gray-700">
             <h2 className="text-xl font-semibold mb-4 dark:text-white">Other Ways to Connect</h2>
             <p className="mb-2 dark:text-gray-300">
-              <span className="font-medium dark:text-gray-200">Email:</span> ben.d.rivers@example.com
+              <span className="font-medium dark:text-gray-200">Email:</span> riversbenjamin5@gmail.com
             </p>
             <p className="mb-2 dark:text-gray-300">
               <span className="font-medium dark:text-gray-200">LinkedIn:</span>{' '}
               <a 
-                href="https://linkedin.com" 
+                href="linkedin.com/in/ben-rivers-881b72233/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-blue-600 dark:text-blue-400 hover:underline"
               >
-                linkedin.com/in/bendrivers
+                linkedin.com/in/ben-rivers-881b72233/
               </a>
             </p>
           </div>
