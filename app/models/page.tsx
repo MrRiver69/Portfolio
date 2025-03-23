@@ -21,12 +21,12 @@ export default function ModelsPage() {
         "Simplistic design for low-poly optimization"
 
       ],
-      thumbnailImage: "/Images/Models/Boat/thumbnail.jpg",
+      thumbnailImage: "/Images/Models/Boat/BoatTextured.jpg",
       images: [
-        { src: "/Images/Models/Boat/view1.jpg", alt: "Boat Model - Exterior hull view" },
-        { src: "/Images/Models/Boat/view2.jpg", alt: "Boat Model - Cockpit interior" },
-        { src: "/Images/Models/Boat/view3.jpg", alt: "Boat Model - Engine detail" },
-        { src: "/Images/Models/Boat/view4.jpg", alt: "Boat Model - Wireframe view" }
+        { src: "/Images/Models/Boat/BoatTextured.jpg", alt: "Boat Model - Exterior hull view" },
+        { src: "/Images/Models/Boat/BoatUntextured.jpg", alt: "Boat Model - Cockpit interior" },
+        { src: "/Images/Models/Boat/BoatWireframe.jpg", alt: "Boat Model - Engine detail" },
+        { src: "/Images/Models/Boat/BoatWireframe2.jpg", alt: "Boat Model - Wireframe view" }
       ],
       type: "model",
       splineUrl: "https://my.spline.design/boatmodel-18e273eae9b4e97008d048648bdb0b9c/",
@@ -45,12 +45,12 @@ export default function ModelsPage() {
         "Multiple texture variations",
         "Game-ready version with normal maps baked from high-poly model"
       ],
-      thumbnailImage: "/Images/Models/Oil_Rig/thumbnail.jpg",
+      thumbnailImage: "/Images/Models/Oil Rig/OilRig.jpg",
       images: [
-        { src: "/Images/Models/Oil_Rig/view1.jpg", alt: "Oil Rig Model - Full character view" },
-        { src: "/Images/Models/Oil_Rig/view2.jpg", alt: "Oil Rig Model - Detail of face and head" },
-        { src: "/Images/Models/Oil_Rig/view3.jpg", alt: "Oil Rig Model - Texture breakdown" },
-        { src: "/Images/Models/Oil_Rig/view4.jpg", alt: "Oil Rig Model - Wireframe and topology" }
+        { src: "/Images/Models/Oil Rig/OilRig.jpg", alt: "Oil Rig Model - Full character view" },
+        { src: "/Images/Models/Oil Rig/OilRigUntextured.JPG", alt: "Oil Rig Model - Detail of face and head" },
+        { src: "/Images/Models/Oil Rig/OilRigWireframe.JPG", alt: "Oil Rig Model - Texture breakdown" },
+        { src: "/Images/Models/Oil Rig/OilRigWireframe2.JPG", alt: "Oil Rig Model - Wireframe and topology" }
       ],
       type: "model",
       splineUrl: "https://my.spline.design/oilrigmodelcopy-8e96cf1b7ca5e7fed09dbc3183777984/",
@@ -93,12 +93,12 @@ export default function ModelsPage() {
         "Impact and damage decal textures",
         "Full PBR workflow with metallic/roughness maps"
       ],
-      thumbnailImage: "/Images/Models/Buff_Character/thumbnail.jpg",
+      thumbnailImage: "/Images/Models/Buff Character/Buff.jpg",
       images: [
-        { src: "/Images/Models/Buff_Character/view1.jpg", alt: "Buff Character Model - Fantasy weapons display" },
-        { src: "/Images/Models/Buff_Character/view2.jpg", alt: "Buff Character Model - Sci-fi weapons display" },
-        { src: "/Images/Models/Buff_Character/view3.jpg", alt: "Buff Character Model - Detail shots of craftsmanship" },
-        { src: "/Images/Models/Buff_Character/view4.jpg", alt: "Buff Character Model - Material variation examples" }
+        { src: "/Images/Models/Buff Character/Buff.jpg", alt: "Buff Character Model - Fantasy weapons display" },
+        { src: "/Images/Models/Buff Character/BuffUntextured.jpg", alt: "Buff Character Model - Sci-fi weapons display" },
+        { src: "/Images/Models/Buff Character/BuffWireframe.jpg", alt: "Buff Character Model - Detail shots of craftsmanship" },
+        { src: "/Images/Models/Buff Character/BuffWireframe2.jpg", alt: "Buff Character Model - Material variation examples" }
       ],
       type: "model",
       splineUrl: "https://my.spline.design/buffcharactermodel-de81e6f87823bfa9c6b3d1576bee8236/",
@@ -117,12 +117,12 @@ export default function ModelsPage() {
         "Complete animation-ready skeletal structure",
         "Multiple outfit and accessory variations"
       ],
-      thumbnailImage: "/Images/Models/T-Rex_Skull/thumbnail.jpg",
+      thumbnailImage: "/Images/Models/T-Rex Skull/TrexSkull.jpg",
       images: [
-        { src: "/Images/Models/T-Rex_Skull/view1.jpg", alt: "T-Rex Skull Model - Full body turnaround" },
-        { src: "/Images/Models/T-Rex_Skull/view2.jpg", alt: "T-Rex Skull Model - Facial expression range" },
-        { src: "/Images/Models/T-Rex_Skull/view3.jpg", alt: "T-Rex Skull Model - Clothing detail" },
-        { src: "/Images/Models/T-Rex_Skull/view4.jpg", alt: "T-Rex Skull Model - Texturing breakdown" }
+        { src: "/Images/Models/T-Rex Skull/TrexSkull.jpg", alt: "T-Rex Skull Model - Full body turnaround" },
+        { src: "/Images/Models/T-Rex Skull/TrexHP.png", alt: "T-Rex Skull Model - Facial expression range" },
+        { src: "/Images/Models/T-Rex Skull/TrexHPWire.png", alt: "T-Rex Skull Model - Clothing detail" },
+        { src: "/Images/Models/T-Rex Skull/TrexWire.png", alt: "T-Rex Skull Model - Texturing breakdown" }
       ],
       type: "model",
       splineUrl: "https://my.spline.design/trexskullmodel-f6584b3177f8ee36b58ef09e0c78c3ab/",
