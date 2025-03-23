@@ -150,12 +150,12 @@ export default function ContactPage() {
             <p className="mb-2 dark:text-gray-300">
               <span className="font-medium dark:text-gray-200">LinkedIn:</span>{' '}
               <a 
-                href="linkedin.com/in/ben-rivers-881b72233/" 
+                href="https://www.linkedin.com/in/ben-rivers-881b72233/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-blue-600 dark:text-blue-400 hover:underline"
               >
-                linkedin.com/in/ben-rivers-881b72233/
+                https://www.linkedin.com/in/ben-rivers-881b72233/
               </a>
             </p>
           </div>
