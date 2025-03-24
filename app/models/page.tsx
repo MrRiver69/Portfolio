@@ -16,7 +16,7 @@ export default function ModelsPage() {
       software: ["Blender", "Unity"],
       polygons: "2,900",
       features: [
-        "Fully modeled and textured in Blender",
+        "Fully modelled and textured in Blender",
         "Used as the players boat in Sustainable Shores",
         "Simplistic design for low-poly optimization"
 
@@ -34,16 +34,14 @@ export default function ModelsPage() {
     },
     {
       title: "Oil Rig Model",
-      description: "An original fantasy creature model with detailed sculpting and texturing for use in games and cinematics.",
-      longDescription: "This original fantasy creature was designed for a dark fantasy RPG. The character combines elements of traditional folklore with unique design elements to create a memorable adversary. The model features high-resolution sculpting with particular attention to surface details like scales, wrinkles, and musculature. The texturing includes subsurface scattering maps for realistic skin rendering and custom displacement maps for fine details.",
+      description: "Low-Poly Oil Rig Model.",
+      longDescription: "This is a low-poly oil rig model that was created, rigged, and animated in Blender, and textured in Substance Painter.",
       software: ["Blender", "Substance Painter", "Unity"],
       polygons: "2.5 million (high-poly) / 85,000 (game-ready)",
       features: [
-        "Detailed anatomy with accurate musculature",
-        "Custom texture maps including displacement and subsurface scattering",
-        "Fully rigged for animation with facial controls",
-        "Multiple texture variations",
-        "Game-ready version with normal maps baked from high-poly model"
+        "Fully modelled and animated in Blender",
+        "Used as the outpost in Sustainable Shores",
+        "Simplistic design for low-poly optimization"
       ],
       thumbnailImage: "/Images/Models/Oil Rig/OilRig.jpg",
       images: [
@@ -58,16 +56,14 @@ export default function ModelsPage() {
     },
     {
       title: "Japanese Tea Pot Model",
-      description: "A modular urban environment set with multiple building types, street furniture, and vegetation.",
-      longDescription: "This comprehensive urban environment asset pack was designed for open-world games and architectural visualization. The modular system includes multiple building types that can be combined to create diverse cityscapes, along with detailed street furniture, vehicles, and vegetation. All assets are optimized for real-time rendering while maintaining high visual fidelity.",
+      description: "High-Poly Japanese Style Teapot",
+      longDescription: "This is a high-poly japanese styled teapot model that was created in Maya and textured in Substance Painter",
       software: ["Maya", "Substance Painter"],
       polygons: "Variable (1,000 - 15,000 per asset)",
       features: [
-        "Modular building system with over 50 unique pieces",
-        "PBR materials with environmental damage variations",
-        "Integrated LOD system for performance optimization",
-        "Seamless texture atlases for efficient memory usage",
-        "Ambient occlusion and light maps baked in"
+        "Fully modelled and rendered in Maya",
+        "Textured in Substance Painter",
+        "High detail design for realistic render"
       ],
       thumbnailImage: "/Images/Models/TeaPot/TeaPot.jpg",
       images: [
@@ -82,16 +78,14 @@ export default function ModelsPage() {
     },
     {
       title: "Buff Character Model",
-      description: "A set of fantasy and sci-fi weapons with detailed modeling and texturing for game assets.",
-      longDescription: "This weapons collection features a diverse range of both fantasy and sci-fi themed arms designed for action RPGs and first-person shooters. Each weapon has been crafted with meticulous attention to detail, with realistic materials and moving parts where appropriate. The collection includes swords, axes, futuristic firearms, and energy weapons, each with multiple texture variations.",
-      software: ["Maya", "Photo Shop"],
+      description: "High-Poly Stylized Character Model.",
+      longDescription: "This is a high-poly stylized character model that was created in Maya and textured in Photoshop.",
+      software: ["Maya", "Photoshop"],
       polygons: "8,000 - 15,000 per weapon",
       features: [
-        "First-person and third-person optimized versions",
-        "Multiple material variations for each weapon",
-        "Animated components (triggers, magazines, etc.)",
-        "Impact and damage decal textures",
-        "Full PBR workflow with metallic/roughness maps"
+        "Fully modelled, rigged and rendered in Maya",
+        "Textured in Photoshop",
+        "Designed for animation"
       ],
       thumbnailImage: "/Images/Models/Buff Character/Buff.JPG",
       images: [
@@ -106,16 +100,14 @@ export default function ModelsPage() {
     },
     {
       title: "T-Rex Skull Model",
-      description: "A highly detailed character model created for a AAA game project with advanced rigging and skin weighting.",
-      longDescription: "This character model was designed for a major game title as one of the central player characters. The model features advanced facial topology for realistic expressions, meticulously crafted clothing with physics-enabled components, and a production-ready rig suitable for both gameplay and cinematic animations. Special attention was given to realistic skin texturing and hair rendering.",
+      description: "High-Poly Realistic T-Rex Skull Model.",
+      longDescription: "This is a high-poly realistic t-rex skull model that was created in Blender, textured in Substance Painter, and rendered in Unreal Engine.",
       software: ["Blender", "Substance Painter", "Unreal Engine"],
       polygons: "80,000 (in-game model) / 5 million (cinematic version)",
       features: [
-        "Advanced facial rigging with FACS-based blend shapes",
-        "Physically accurate clothing simulation",
-        "Detailed skin texturing with subsurface scattering",
-        "Complete animation-ready skeletal structure",
-        "Multiple outfit and accessory variations"
+        "Fully modelled in Blender",
+        "Textured in Maya",
+        "Used for a live scene in UE5"
       ],
       thumbnailImage: "/Images/Models/T-Rex Skull/TrexSkull.jpg",
       images: [
