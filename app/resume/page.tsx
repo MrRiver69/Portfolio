@@ -109,10 +109,17 @@ export default function ResumePage() {
           {/* References */}
           <div>
             <h2 className="text-2xl font-semibold mb-4 dark:text-white">REFERENCE</h2>
-            <div className="text-gray-600 dark:text-gray-400">
-              <p className="font-semibold dark:text-gray-300">Paige Kojin</p>
-              <p>Manager Dominos</p>
-              <p>+04 0702 1634</p>
+            <div className="flex flex-col sm:flex-row gap-8 text-gray-600 dark:text-gray-400">
+              <div>
+                <p className="font-semibold dark:text-gray-300">Paige Kojin</p>
+                <p>Manager Dominos</p>
+                <p>+04 0702 1634</p>
+              </div>
+              <div>
+                <p className="font-semibold dark:text-gray-300">Jack Kempster</p>
+                <p></p>
+                <p>+61 468 393 735</p>
+              </div>
             </div>
           </div>
           
