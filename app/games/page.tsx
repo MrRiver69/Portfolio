@@ -136,17 +136,17 @@ export default function GamesPage() {
     },
     {
       title: "Mower Madness",
-      description: "A short water simulation experience.",
-      longDescription: "The lagoon experience is a short experience that aims to capture the feeling of being in the Brisbane Southbank lagoon, with three unique interactions for the player to experience.",
+      description: "A Loacal Mower Party Game.",
+      longDescription: "Mower Madness is a local multiplayer game where players compete to cut the most grass in a limited time.",
       technologies: ["UE5", "Blueprint"],
       role: "Solo Developer",
       thumbnailImage: "/Images/Games/Mow/Mow1.JPG",
       features: [
-        "Virtual Reality experience",
-        "Advanced water simulation interactions",
-        "Three interactive experiences",
+        "Fast paced local multiplayer game",
+        "Simplistic game mechanics",
+        "Siza & speed power ups",
         "Minimalistic UI and HUD",
-        "Rubber Ducks"
+        "Player leaderboard"
       ],
       images: [
         { src: "/Images/Games/Mow/Mow6.JPG", alt: "Lagoon Experience - Night club scene with unique lighting" },
