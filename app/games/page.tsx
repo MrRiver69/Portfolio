@@ -52,7 +52,7 @@ export default function GamesPage() {
         "Unique visuals and stylization"
       ],
       images: [
-        { src: "/Cyber1.jpg", alt: "Cyber Ninja - Character customization screen" },
+        { src: "Images/Games/Cyber/Cyber1.JPG", alt: "Cyber Ninja - Character customization screen" },
         { src: "/Cyber2.jpg", alt: "Cyber Ninja - Ancient temple dungeon" },
         { src: "/Cyber3.jpg", alt: "Cyber Ninja - Combat with a dragon" },
         { src: "/Cyber4.jpg", alt: "Cyber Ninja - Enchanted forest environment" },
