@@ -28,12 +28,12 @@ export default function GamesPage() {
         "Fishing mini-game mechanic"
       ],
       images: [
-        { src: "/Fish1.jpg", alt: "Sustainable Shores - Spacecraft approaching a ringed planet" },
-        { src: "/Fish2.jpg", alt: "Sustainable Shores - Space station exterior" },
-        { src: "/Fish3.jpg", alt: "Sustainable Shores - Alien landscape with unique flora" },
-        { src: "/Fish4.jpg", alt: "Sustainable Shores - Trading interface and economy screen" },
-        { src: "/Fish5.jpg", alt: "Sustainable Shores - Character customization interface" },
-        { src: "/Fish6.jpg", alt: "Sustainable Shores - Character customization interface" }
+        { src: "/Images/Games/Fish/Fish1.JPG", alt: "Sustainable Shores - Spacecraft approaching a ringed planet" },
+        { src: "/Images/Games/Fish/Fish2.JPG", alt: "Sustainable Shores - Space station exterior" },
+        { src: "/Images/Games/Fish/Fish3.JPG", alt: "Sustainable Shores - Alien landscape with unique flora" },
+        { src: "/Images/Games/Fish/Fish4.JPG", alt: "Sustainable Shores - Trading interface and economy screen" },
+        { src: "/Images/Games/Fish/Fish5.JPG", alt: "Sustainable Shores - Character customization interface" },
+        { src: "/Images/Games/Fish/Fish6.JPG", alt: "Sustainable Shores - Character customization interface" }
       ],
       type: "game"
     },
@@ -76,12 +76,12 @@ export default function GamesPage() {
         "Minimalistic UI and HUD"
       ],
       images: [
-        { src: "/Door1.jpg", alt: "Door Horror - Neon-lit cityscape view" },
-        { src: "/Door2.jpg", alt: "Door Horror - Character dialogue system" },
-        { src: "/Door3.jpg", alt: "Door Horror - Evidence board investigation" },
-        { src: "/Door4.jpg", alt: "Door Horror - Abandoned subway environment" },
-        { src: "/Door5.jpg", alt: "Door Horror - Night club scene with unique lighting" },
-        { src: "/Door6.jpg", alt: "Door Horror - Night club scene with unique lighting" }
+        { src: "/Images/Games/Door/Door1.JPG", alt: "Door Horror - Neon-lit cityscape view" },
+        { src: "/Images/Games/Door/Door2.JPG", alt: "Door Horror - Character dialogue system" },
+        { src: "/Images/Games/Door/Door3.JPG", alt: "Door Horror - Evidence board investigation" },
+        { src: "/Images/Games/Door/Door4.JPG", alt: "Door Horror - Abandoned subway environment" },
+        { src: "/Images/Games/Door/Door5.JPG", alt: "Door Horror - Night club scene with unique lighting" },
+        { src: "/Images/Games/Door/Door6.JPG", alt: "Door Horror - Night club scene with unique lighting" }
       ],
       type: "game"
     },
@@ -100,12 +100,12 @@ export default function GamesPage() {
         "Variable gravity"
       ],
       images: [
-        { src: "/Space1.jpg", alt: "A Space Moment - Neon-lit cityscape view" },
-        { src: "/Space2.jpg", alt: "A Space Moment - Character dialogue system" },
-        { src: "/Space3.jpg", alt: "A Space Moment - Evidence board investigation" },
-        { src: "/Space4.jpg", alt: "A Space Moment - Abandoned subway environment" },
-        { src: "/Space5.jpg", alt: "A Space Moment - Night club scene with unique lighting" },
-        { src: "/Space6.jpg", alt: "A Space Moment - Night club scene with unique lighting" }
+        { src: "/Images/Games/Space/Space1.JPG", alt: "A Space Moment - Neon-lit cityscape view" },
+        { src: "/Images/Games/Space/Space2.JPG", alt: "A Space Moment - Character dialogue system" },
+        { src: "/Images/Games/Space/Space3.JPG", alt: "A Space Moment - Evidence board investigation" },
+        { src: "/Images/Games/Space/Space4.JPG", alt: "A Space Moment - Abandoned subway environment" },
+        { src: "/Images/Games/Space/Space5.JPG", alt: "A Space Moment - Night club scene with unique lighting" },
+        { src: "/Images/Games/Space/Space6.JPG", alt: "A Space Moment - Night club scene with unique lighting" }
       ],
       type: "game"
     },
@@ -124,12 +124,12 @@ export default function GamesPage() {
         "Rubber Ducks"
       ],
       images: [
-        { src: "/Lagoon1.jpg", alt: "Lagoon Experience - Neon-lit cityscape view" },
-        { src: "/Lagoon2.jpg", alt: "Lagoon Experience - Character dialogue system" },
-        { src: "/Lagoon3.jpg", alt: "Lagoon Experience - Evidence board investigation" },
-        { src: "/Lagoon4.jpg", alt: "Lagoon Experience - Abandoned subway environment" },
-        { src: "/Lagoon5.jpg", alt: "Lagoon Experience - Night club scene with unique lighting" },
-        { src: "/Lagoon6.jpg", alt: "Lagoon Experience - Night club scene with unique lighting" }
+        { src: "/Images/Games/Lagoon/Lagoon1.JPG", alt: "Lagoon Experience - Neon-lit cityscape view" },
+        { src: "/Images/Games/Lagoon/Lagoon2.JPG", alt: "Lagoon Experience - Character dialogue system" },
+        { src: "/Images/Games/Lagoon/Lagoon3.JPG", alt: "Lagoon Experience - Evidence board investigation" },
+        { src: "/Images/Games/Lagoon/Lagoon4.JPG", alt: "Lagoon Experience - Abandoned subway environment" },
+        { src: "/Images/Games/Lagoon/Lagoon5.JPG", alt: "Lagoon Experience - Night club scene with unique lighting" },
+        { src: "/Images/Games/Lagoon/Lagoon6.JPG", alt: "Lagoon Experience - Night club scene with unique lighting" }
       ],
       type: "game"
     },
@@ -148,12 +148,12 @@ export default function GamesPage() {
         "Rubber Ducks"
       ],
       images: [
-        { src: "/Mow1.jpg", alt: "Lagoon Experience - Neon-lit cityscape view" },
-        { src: "/Mow2.jpg", alt: "Lagoon Experience - Character dialogue system" },
-        { src: "/Mow3.jpg", alt: "Lagoon Experience - Evidence board investigation" },
-        { src: "/Mow4.jpg", alt: "Lagoon Experience - Abandoned subway environment" },
-        { src: "/Mow5.jpg", alt: "Lagoon Experience - Night club scene with unique lighting" },
-        { src: "/Mow6.jpg", alt: "Lagoon Experience - Night club scene with unique lighting" }
+        { src: "/Images/Games/Mow/Mow1.JPG", alt: "Lagoon Experience - Neon-lit cityscape view" },
+        { src: "/Images/Games/Mow/Mow2.JPG", alt: "Lagoon Experience - Character dialogue system" },
+        { src: "/Images/Games/Mow/Mow3.JPG", alt: "Lagoon Experience - Evidence board investigation" },
+        { src: "/Images/Games/Mow/Mow4.JPG", alt: "Lagoon Experience - Abandoned subway environment" },
+        { src: "/Images/Games/Mow/Mow5.JPG", alt: "Lagoon Experience - Night club scene with unique lighting" },
+        { src: "/Images/Games/Mow/Mow6.JPG", alt: "Lagoon Experience - Night club scene with unique lighting" }
       ],
       type: "game"
     }
