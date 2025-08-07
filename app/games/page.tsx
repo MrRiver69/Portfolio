@@ -52,12 +52,12 @@ export default function GamesPage() {
         "Unique visuals and stylization"
       ],
       images: [
-        { src: "Images/Games/Cyber/Cyber1.JPG", alt: "Cyber Ninja - Character customization screen" },
-        { src: "/Cyber2.jpg", alt: "Cyber Ninja - Ancient temple dungeon" },
-        { src: "/Cyber3.jpg", alt: "Cyber Ninja - Combat with a dragon" },
-        { src: "/Cyber4.jpg", alt: "Cyber Ninja - Enchanted forest environment" },
-        { src: "/Cyber5.jpg", alt: "Cyber Ninja - Inventory and crafting system" },
-        { src: "/Cyber6.jpg", alt: "Cyber Ninja - Inventory and crafting system" }
+        { src: "Images/Games/Cyber/Cyber1.jpg", alt: "Cyber Ninja - Character customization screen" },
+        { src: "Images/Games/Cyber/Cyber2.jpg", alt: "Cyber Ninja - Ancient temple dungeon" },
+        { src: "Images/Games/Cyber/Cyber3.jpg", alt: "Cyber Ninja - Combat with a dragon" },
+        { src: "Images/Games/Cyber/Cyber4.jpg", alt: "Cyber Ninja - Enchanted forest environment" },
+        { src: "Images/Games/Cyber/Cyber5.jpg", alt: "Cyber Ninja - Inventory and crafting system" },
+        { src: "Images/Games/Cyber/Cyber6.jpg", alt: "Cyber Ninja - Inventory and crafting system" }
       ],
       type: "game"
     },
