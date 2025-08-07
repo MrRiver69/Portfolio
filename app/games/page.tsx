@@ -28,12 +28,13 @@ export default function GamesPage() {
         "Fishing mini-game mechanic"
       ],
       images: [
+        { src: "/Images/Games/Fish/Fish6.JPG", alt: "Sustainable Shores - Character customization interface" },
         { src: "/Images/Games/Fish/Fish1.JPG", alt: "Sustainable Shores - Spacecraft approaching a ringed planet" },
         { src: "/Images/Games/Fish/Fish2.JPG", alt: "Sustainable Shores - Space station exterior" },
         { src: "/Images/Games/Fish/Fish3.JPG", alt: "Sustainable Shores - Alien landscape with unique flora" },
         { src: "/Images/Games/Fish/Fish4.JPG", alt: "Sustainable Shores - Trading interface and economy screen" },
-        { src: "/Images/Games/Fish/Fish5.JPG", alt: "Sustainable Shores - Character customization interface" },
-        { src: "/Images/Games/Fish/Fish6.JPG", alt: "Sustainable Shores - Character customization interface" }
+        { src: "/Images/Games/Fish/Fish5.JPG", alt: "Sustainable Shores - Character customization interface" }
+
       ],
       type: "game"
     },
@@ -148,12 +149,13 @@ export default function GamesPage() {
         "Rubber Ducks"
       ],
       images: [
+        { src: "/Images/Games/Mow/Mow6.JPG", alt: "Lagoon Experience - Night club scene with unique lighting" },
         { src: "/Images/Games/Mow/Mow1.JPG", alt: "Lagoon Experience - Neon-lit cityscape view" },
         { src: "/Images/Games/Mow/Mow2.JPG", alt: "Lagoon Experience - Character dialogue system" },
         { src: "/Images/Games/Mow/Mow3.JPG", alt: "Lagoon Experience - Evidence board investigation" },
         { src: "/Images/Games/Mow/Mow4.JPG", alt: "Lagoon Experience - Abandoned subway environment" },
-        { src: "/Images/Games/Mow/Mow5.JPG", alt: "Lagoon Experience - Night club scene with unique lighting" },
-        { src: "/Images/Games/Mow/Mow6.JPG", alt: "Lagoon Experience - Night club scene with unique lighting" }
+        { src: "/Images/Games/Mow/Mow5.JPG", alt: "Lagoon Experience - Night club scene with unique lighting" }
+
       ],
       type: "game"
     }
