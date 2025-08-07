@@ -28,11 +28,12 @@ export default function GamesPage() {
         "Fishing mini-game mechanic"
       ],
       images: [
-        { src: "/cosmic1.jpg", alt: "Sustainable Shores - Spacecraft approaching a ringed planet" },
-        { src: "/cosmic2.jpg", alt: "Sustainable Shores - Space station exterior" },
-        { src: "/cosmic3.jpg", alt: "Sustainable Shores - Alien landscape with unique flora" },
-        { src: "/cosmic4.jpg", alt: "Sustainable Shores - Trading interface and economy screen" },
-        { src: "/cosmic5.jpg", alt: "Sustainable Shores - Character customization interface" }
+        { src: "/Fish1.jpg", alt: "Sustainable Shores - Spacecraft approaching a ringed planet" },
+        { src: "/Fish2.jpg", alt: "Sustainable Shores - Space station exterior" },
+        { src: "/Fish3.jpg", alt: "Sustainable Shores - Alien landscape with unique flora" },
+        { src: "/Fish4.jpg", alt: "Sustainable Shores - Trading interface and economy screen" },
+        { src: "/Fish5.jpg", alt: "Sustainable Shores - Character customization interface" },
+        { src: "/Fish6.jpg", alt: "Sustainable Shores - Character customization interface" }
       ],
       type: "game"
     },
@@ -51,11 +52,12 @@ export default function GamesPage() {
         "Unique visuals and stylization"
       ],
       images: [
-        { src: "/mythic1.jpg", alt: "Cyber Ninja - Character customization screen" },
-        { src: "/mythic2.jpg", alt: "Cyber Ninja - Ancient temple dungeon" },
-        { src: "/mythic3.jpg", alt: "Cyber Ninja - Combat with a dragon" },
-        { src: "/mythic4.jpg", alt: "Cyber Ninja - Enchanted forest environment" },
-        { src: "/mythic5.jpg", alt: "Cyber Ninja - Inventory and crafting system" }
+        { src: "/Cyber1.jpg", alt: "Cyber Ninja - Character customization screen" },
+        { src: "/Cyber2.jpg", alt: "Cyber Ninja - Ancient temple dungeon" },
+        { src: "/Cyber3.jpg", alt: "Cyber Ninja - Combat with a dragon" },
+        { src: "/Cyber4.jpg", alt: "Cyber Ninja - Enchanted forest environment" },
+        { src: "/Cyber5.jpg", alt: "Cyber Ninja - Inventory and crafting system" },
+        { src: "/Cyber6.jpg", alt: "Cyber Ninja - Inventory and crafting system" }
       ],
       type: "game"
     },
@@ -74,11 +76,12 @@ export default function GamesPage() {
         "Minimalistic UI and HUD"
       ],
       images: [
-        { src: "/urban1.jpg", alt: "Door Horror - Neon-lit cityscape view" },
-        { src: "/urban2.jpg", alt: "Door Horror - Character dialogue system" },
-        { src: "/urban3.jpg", alt: "Door Horror - Evidence board investigation" },
-        { src: "/urban4.jpg", alt: "Door Horror - Abandoned subway environment" },
-        { src: "/urban5.jpg", alt: "Door Horror - Night club scene with unique lighting" }
+        { src: "/Door1.jpg", alt: "Door Horror - Neon-lit cityscape view" },
+        { src: "/Door2.jpg", alt: "Door Horror - Character dialogue system" },
+        { src: "/Door3.jpg", alt: "Door Horror - Evidence board investigation" },
+        { src: "/Door4.jpg", alt: "Door Horror - Abandoned subway environment" },
+        { src: "/Door5.jpg", alt: "Door Horror - Night club scene with unique lighting" },
+        { src: "/Door6.jpg", alt: "Door Horror - Night club scene with unique lighting" }
       ],
       type: "game"
     },
@@ -97,11 +100,12 @@ export default function GamesPage() {
         "Variable gravity"
       ],
       images: [
-        { src: "/urban1.jpg", alt: "A Space Moment - Neon-lit cityscape view" },
-        { src: "/urban2.jpg", alt: "A Space Moment - Character dialogue system" },
-        { src: "/urban3.jpg", alt: "A Space Moment - Evidence board investigation" },
-        { src: "/urban4.jpg", alt: "A Space Moment - Abandoned subway environment" },
-        { src: "/urban5.jpg", alt: "A Space Moment - Night club scene with unique lighting" }
+        { src: "/Space1.jpg", alt: "A Space Moment - Neon-lit cityscape view" },
+        { src: "/Space2.jpg", alt: "A Space Moment - Character dialogue system" },
+        { src: "/Space3.jpg", alt: "A Space Moment - Evidence board investigation" },
+        { src: "/Space4.jpg", alt: "A Space Moment - Abandoned subway environment" },
+        { src: "/Space5.jpg", alt: "A Space Moment - Night club scene with unique lighting" },
+        { src: "/Space6.jpg", alt: "A Space Moment - Night club scene with unique lighting" }
       ],
       type: "game"
     },
@@ -120,11 +124,36 @@ export default function GamesPage() {
         "Rubber Ducks"
       ],
       images: [
-        { src: "/urban1.jpg", alt: "Lagoon Experience - Neon-lit cityscape view" },
-        { src: "/urban2.jpg", alt: "Lagoon Experience - Character dialogue system" },
-        { src: "/urban3.jpg", alt: "Lagoon Experience - Evidence board investigation" },
-        { src: "/urban4.jpg", alt: "Lagoon Experience - Abandoned subway environment" },
-        { src: "/urban5.jpg", alt: "Lagoon Experience - Night club scene with unique lighting" }
+        { src: "/Lagoon1.jpg", alt: "Lagoon Experience - Neon-lit cityscape view" },
+        { src: "/Lagoon2.jpg", alt: "Lagoon Experience - Character dialogue system" },
+        { src: "/Lagoon3.jpg", alt: "Lagoon Experience - Evidence board investigation" },
+        { src: "/Lagoon4.jpg", alt: "Lagoon Experience - Abandoned subway environment" },
+        { src: "/Lagoon5.jpg", alt: "Lagoon Experience - Night club scene with unique lighting" },
+        { src: "/Lagoon6.jpg", alt: "Lagoon Experience - Night club scene with unique lighting" }
+      ],
+      type: "game"
+    },
+    {
+      title: "Mower Madness",
+      description: "A short water simulation experience.",
+      longDescription: "The lagoon experience is a short experience that aims to capture the feeling of being in the Brisbane Southbank lagoon, with three unique interactions for the player to experience.",
+      technologies: ["UE5", "Blueprint"],
+      role: "Solo Developer",
+      thumbnailImage: "/Images/Games/Lagoon_Experience/thumbnail.jpg",
+      features: [
+        "Virtual Reality experience",
+        "Advanced water simulation interactions",
+        "Three interactive experiences",
+        "Minimalistic UI and HUD",
+        "Rubber Ducks"
+      ],
+      images: [
+        { src: "/Mow1.jpg", alt: "Lagoon Experience - Neon-lit cityscape view" },
+        { src: "/Mow2.jpg", alt: "Lagoon Experience - Character dialogue system" },
+        { src: "/Mow3.jpg", alt: "Lagoon Experience - Evidence board investigation" },
+        { src: "/Mow4.jpg", alt: "Lagoon Experience - Abandoned subway environment" },
+        { src: "/Mow5.jpg", alt: "Lagoon Experience - Night club scene with unique lighting" },
+        { src: "/Mow6.jpg", alt: "Lagoon Experience - Night club scene with unique lighting" }
       ],
       type: "game"
     }
