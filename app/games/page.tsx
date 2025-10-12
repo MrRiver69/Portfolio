@@ -37,7 +37,7 @@ export default function GamesPage() {
 
       ],
       type: "game",
-      youtubeUrl: "https://www.youtube.com/watch?v=vn_or9gEB6g&list=RDvn_or9gEB6g&start_radio=1"
+      youtubeUrl: "https://www.youtube.com/embed/vn_or9gEB6g?si=oqmxRu9XXa1I2L5E"
     },
     {
       title: "Cyber Ninja",
@@ -62,7 +62,7 @@ export default function GamesPage() {
         { src: "Images/Games/Cyber/Cyber6.JPG", alt: "Cyber Ninja - Inventory and crafting system" }
       ],
       type: "game",
-      youtubeUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      youtubeUrl: "https://www.youtube.com/embed/vn_or9gEB6g?si=oqmxRu9XXa1I2L5E"
     },
     {
       title: "Door Horror",
@@ -87,7 +87,7 @@ export default function GamesPage() {
         { src: "/Images/Games/Door/Door6.JPG", alt: "Door Horror - Night club scene with unique lighting" }
       ],
       type: "game",
-      youtubeUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      youtubeUrl: "https://www.youtube.com/embed/vn_or9gEB6g?si=oqmxRu9XXa1I2L5E"
     },
     {
       title: "A Space Moment",
@@ -112,7 +112,7 @@ export default function GamesPage() {
         { src: "/Images/Games/Space/Space6.JPG", alt: "A Space Moment - Night club scene with unique lighting" }
       ],
       type: "game",
-      youtubeUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      youtubeUrl: "https://www.youtube.com/embed/vn_or9gEB6g?si=oqmxRu9XXa1I2L5E"
     },
     {
       title: "Lagoon Experience",
@@ -137,7 +137,7 @@ export default function GamesPage() {
         { src: "/Images/Games/Lagoon/Lagoon6.JPG", alt: "Lagoon Experience - Night club scene with unique lighting" }
       ],
       type: "game",
-      youtubeUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      youtubeUrl: "https://www.youtube.com/embed/vn_or9gEB6g?si=oqmxRu9XXa1I2L5E"
     },
     {
       title: "Mower Madness",
@@ -163,7 +163,7 @@ export default function GamesPage() {
 
       ],
       type: "game",
-      youtubeUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+      youtubeUrl: "https://www.youtube.com/embed/vn_or9gEB6g?si=oqmxRu9XXa1I2L5E"
     }
   ];
 
