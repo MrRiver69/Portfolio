@@ -274,18 +274,10 @@ export default function ProjectDetailModal({ isOpen, onClose, project }: Project
                 }`}
               >
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="bg-gradient-to-br from-blue-500/20 to-purple-500/20 dark:from-blue-400/30 dark:to-purple-400/30 p-3 rounded-full backdrop-blur-sm">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8 text-blue-600 dark:text-blue-400 ml-1">
+                  <div className="bg-gradient-to-br from-blue-500/20 to-purple-500/20 dark:from-blue-400/30 dark:to-purple-400/30 p-4 rounded-full backdrop-blur-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-12 h-12 text-blue-600 dark:text-blue-400 ml-1">
                       <path d="M8 5v14l11-7z"/>
                     </svg>
-                  </div>
-                </div>
-                <div className="absolute inset-0 bg-gradient-to-br from-gray-50/80 to-gray-100/60 dark:from-gray-800/80 dark:to-gray-900/60">
-                  <div className="flex items-center justify-center h-full">
-                    <div className="text-center">
-                      <div className="text-xs font-semibold text-gray-600 dark:text-gray-300 mb-1">VIDEO</div>
-                      <div className="w-2 h-2 bg-blue-500 dark:bg-blue-400 rounded-full mx-auto animate-pulse"></div>
-                    </div>
                   </div>
                 </div>
               </button>
