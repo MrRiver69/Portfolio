@@ -14,6 +14,7 @@ export interface BaseProjectDetails {
   longDescription?: string;
   features?: string[];
   images: ProjectImage[];
+  youtubeUrl?: string;
 }
 
 export interface GameProjectDetails extends BaseProjectDetails {
@@ -43,17 +44,20 @@ interface ProjectDetailModalProps {
 export default function ProjectDetailModal({ isOpen, onClose, project }: ProjectDetailModalProps) {
   const [activeImageIndex, setActiveImageIndex] = useState(0);
   const [showSpline, setShowSpline] = useState(project.type === 'model');
+  const [showYouTube, setShowYouTube] = useState(false);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [transitionStyles, setTransitionStyles] = useState({});
-  const [targetThumbnail, setTargetThumbnail] = useState<number | null>(null);
+  const [targetThumbnail, setTargetThumbnail] = useState<number | 'youtube' | null>(null);
   
   const mainViewRef = useRef<HTMLDivElement>(null);
   const thumbnailRefs = useRef<(HTMLButtonElement | null)[]>([]);
 
   // Show Spline button for model projects
   const showSplineButton = project.type === 'model';
+  // Show YouTube button if URL is provided
+  const showYouTubeButton = !!project.youtubeUrl;
   
-  const animateTransition = (idx: number | null) => {
+  const animateTransition = (idx: number | 'youtube' | null) => {
     if (!mainViewRef.current) return;
 
     setIsTransitioning(true);
@@ -74,9 +78,14 @@ export default function ProjectDetailModal({ isOpen, onClose, project }: Project
     setTimeout(() => {
       if (idx === null) {
         setShowSpline(true);
+        setShowYouTube(false);
+      } else if (idx === 'youtube') {
+        setShowYouTube(true);
+        setShowSpline(false);
       } else {
         setActiveImageIndex(idx);
         setShowSpline(false);
+        setShowYouTube(false);
       }
       setTransitionStyles({});
       setIsTransitioning(false);
@@ -98,10 +107,17 @@ export default function ProjectDetailModal({ isOpen, onClose, project }: Project
     animateTransition(null);
   };
 
+  const handleYouTubeButtonClick = () => {
+    if (isTransitioning) return;
+    if (showYouTube) return;
+    
+    animateTransition('youtube');
+  };
+
   // Reset refs array when number of thumbnails changes
   useEffect(() => {
-    thumbnailRefs.current = thumbnailRefs.current.slice(0, (project.images.length + (showSplineButton ? 1 : 0)));
-  }, [project.images.length, showSplineButton]);
+    thumbnailRefs.current = thumbnailRefs.current.slice(0, (project.images.length + (showSplineButton ? 1 : 0) + (showYouTubeButton ? 1 : 0)));
+  }, [project.images.length, showSplineButton, showYouTubeButton]);
 
   return (
     <Modal isOpen={isOpen} onClose={onClose} title={project.title}>
@@ -137,15 +153,32 @@ export default function ProjectDetailModal({ isOpen, onClose, project }: Project
                   )}
                   <div className="absolute bottom-0 left-0 right-0 h-8 bg-gray-200 dark:bg-gray-700 z-10"></div>
                 </div>
+              ) : showYouTube || (targetThumbnail === 'youtube' && isTransitioning) ? (
+                <div className="relative w-full h-full">
+                  {project.youtubeUrl && (
+                    <iframe 
+                      src={project.youtubeUrl}
+                      frameBorder='0' 
+                      width='100%' 
+                      height='100%'
+                      title={project.title}
+                      className="absolute inset-0"
+                      loading="lazy"
+                      style={{ pointerEvents: 'auto' }}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                    />
+                  )}
+                </div>
               ) : (
                 <div className="relative w-full h-full flex items-center justify-center">
                   <img
-                    src={project.images[isTransitioning && targetThumbnail !== null ? targetThumbnail : activeImageIndex].src}
-                    alt={project.images[isTransitioning && targetThumbnail !== null ? targetThumbnail : activeImageIndex].alt}
+                    src={project.images[isTransitioning && typeof targetThumbnail === 'number' ? targetThumbnail : activeImageIndex].src}
+                    alt={project.images[isTransitioning && typeof targetThumbnail === 'number' ? targetThumbnail : activeImageIndex].alt}
                     className="max-w-full max-h-full p-4 object-contain"
                     onError={(e) => {
                       console.error('Error loading image:', 
-                        project.images[isTransitioning && targetThumbnail !== null ? targetThumbnail : activeImageIndex].src);
+                        project.images[isTransitioning && typeof targetThumbnail === 'number' ? targetThumbnail : activeImageIndex].src);
                       // Show fallback content on error
                       const target = e.target as HTMLImageElement;
                       target.style.display = 'none';
@@ -156,7 +189,7 @@ export default function ProjectDetailModal({ isOpen, onClose, project }: Project
                         fallback.innerHTML = `
                           <p class="text-gray-600 dark:text-gray-300 mb-2">Failed to load image</p>
                           <p class="text-gray-500 dark:text-gray-400 text-sm">
-                            Path: ${project.images[isTransitioning && targetThumbnail !== null ? targetThumbnail : activeImageIndex].src}
+                            Path: ${project.images[isTransitioning && typeof targetThumbnail === 'number' ? targetThumbnail : activeImageIndex].src}
                           </p>
                         `;
                         container.appendChild(fallback);
@@ -203,7 +236,7 @@ export default function ProjectDetailModal({ isOpen, onClose, project }: Project
                 }}
                 onClick={() => handleThumbnailClick(idx)}
                 className={`bg-gray-200 dark:bg-gray-700 rounded aspect-square overflow-hidden relative ${
-                  !showSpline && idx === activeImageIndex ? 'ring-2 ring-blue-500' : ''
+                  !showSpline && !showYouTube && idx === activeImageIndex ? 'ring-2 ring-blue-500' : ''
                 }`}
               >
                 <div className="absolute inset-0">
@@ -229,6 +262,31 @@ export default function ProjectDetailModal({ isOpen, onClose, project }: Project
                 </div>
               </button>
             ))}
+            
+            {showYouTubeButton && (
+              <button
+                ref={(el) => {
+                  thumbnailRefs.current[showSplineButton ? project.images.length + 1 : project.images.length] = el;
+                }}
+                onClick={handleYouTubeButtonClick}
+                className={`bg-gray-200 dark:bg-gray-700 rounded aspect-square overflow-hidden relative ${
+                  showYouTube ? 'ring-2 ring-red-500' : ''
+                }`}
+              >
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="bg-red-500/10 dark:bg-red-400/20 p-1 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 text-red-600 dark:text-red-400">
+                      <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                  </div>
+                </div>
+                <div className="w-full h-full bg-gray-300 dark:bg-gray-600 opacity-30">
+                  <div className="flex items-center justify-center h-full">
+                    <span className="text-xs font-bold text-gray-700 dark:text-gray-200">YT</span>
+                  </div>
+                </div>
+              </button>
+            )}
           </div>
         </div>
         

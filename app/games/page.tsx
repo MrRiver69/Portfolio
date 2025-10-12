@@ -36,7 +36,8 @@ export default function GamesPage() {
         { src: "/Images/Games/Fish/Fish5.JPG", alt: "Sustainable Shores - Character customization interface" }
 
       ],
-      type: "game"
+      type: "game",
+      youtubeUrl: "https://www.youtube.com/watch?v=vn_or9gEB6g&list=RDvn_or9gEB6g&start_radio=1"
     },
     {
       title: "Cyber Ninja",
@@ -60,7 +61,8 @@ export default function GamesPage() {
         { src: "Images/Games/Cyber/Cyber5.JPG", alt: "Cyber Ninja - Inventory and crafting system" },
         { src: "Images/Games/Cyber/Cyber6.JPG", alt: "Cyber Ninja - Inventory and crafting system" }
       ],
-      type: "game"
+      type: "game",
+      youtubeUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
     },
     {
       title: "Door Horror",
@@ -84,7 +86,8 @@ export default function GamesPage() {
         { src: "/Images/Games/Door/Door5.JPG", alt: "Door Horror - Night club scene with unique lighting" },
         { src: "/Images/Games/Door/Door6.JPG", alt: "Door Horror - Night club scene with unique lighting" }
       ],
-      type: "game"
+      type: "game",
+      youtubeUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
     },
     {
       title: "A Space Moment",
@@ -108,7 +111,8 @@ export default function GamesPage() {
         { src: "/Images/Games/Space/Space5.JPG", alt: "A Space Moment - Night club scene with unique lighting" },
         { src: "/Images/Games/Space/Space6.JPG", alt: "A Space Moment - Night club scene with unique lighting" }
       ],
-      type: "game"
+      type: "game",
+      youtubeUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
     },
     {
       title: "Lagoon Experience",
@@ -132,7 +136,8 @@ export default function GamesPage() {
         { src: "/Images/Games/Lagoon/Lagoon5.JPG", alt: "Lagoon Experience - Night club scene with unique lighting" },
         { src: "/Images/Games/Lagoon/Lagoon6.JPG", alt: "Lagoon Experience - Night club scene with unique lighting" }
       ],
-      type: "game"
+      type: "game",
+      youtubeUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
     },
     {
       title: "Mower Madness",
@@ -157,7 +162,8 @@ export default function GamesPage() {
         { src: "/Images/Games/Mow/Mow5.JPG", alt: "Lagoon Experience - Night club scene with unique lighting" }
 
       ],
-      type: "game"
+      type: "game",
+      youtubeUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
     }
   ];
 
