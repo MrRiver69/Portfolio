@@ -269,20 +269,23 @@ export default function ProjectDetailModal({ isOpen, onClose, project }: Project
                   thumbnailRefs.current[showSplineButton ? project.images.length + 1 : project.images.length] = el;
                 }}
                 onClick={handleYouTubeButtonClick}
-                className={`bg-gray-200 dark:bg-gray-700 rounded aspect-square overflow-hidden relative ${
-                  showYouTube ? 'ring-2 ring-red-500' : ''
+                className={`bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800 rounded aspect-square overflow-hidden relative border border-gray-300 dark:border-gray-600 hover:shadow-md transition-all duration-200 ${
+                  showYouTube ? 'ring-2 ring-blue-500 shadow-lg' : ''
                 }`}
               >
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="bg-red-500/10 dark:bg-red-400/20 p-1 rounded-full">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 text-red-600 dark:text-red-400">
+                  <div className="bg-gradient-to-br from-blue-500/20 to-purple-500/20 dark:from-blue-400/30 dark:to-purple-400/30 p-2 rounded-full backdrop-blur-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 text-blue-600 dark:text-blue-400">
                       <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
                     </svg>
                   </div>
                 </div>
-                <div className="w-full h-full bg-gray-300 dark:bg-gray-600 opacity-30">
+                <div className="absolute inset-0 bg-gradient-to-br from-gray-50/80 to-gray-100/60 dark:from-gray-800/80 dark:to-gray-900/60">
                   <div className="flex items-center justify-center h-full">
-                    <span className="text-xs font-bold text-gray-700 dark:text-gray-200">YT</span>
+                    <div className="text-center">
+                      <div className="text-xs font-semibold text-gray-600 dark:text-gray-300 mb-1">VIDEO</div>
+                      <div className="w-2 h-2 bg-blue-500 dark:bg-blue-400 rounded-full mx-auto animate-pulse"></div>
+                    </div>
                   </div>
                 </div>
               </button>
