@@ -37,17 +37,17 @@ export default function GamesPage() {
 
       ],
       type: "game",
-      youtubeUrl: "https://www.youtube.com/embed/vn_or9gEB6g?si=oqmxRu9XXa1I2L5E"
+      //youtubeUrl: "https://www.youtube.com/embed/vn_or9gEB6g?si=oqmxRu9XXa1I2L5E"
     },
     {
       title: "Echoes of Ash",
       description: "A fishing game with a focus on sustainability and conservation.",
       longDescription: "Sustainable Shores is an open-world ocean exploration game where player, after getting lost at sea, finds an island with a starving population and must learn how to sustainable fish the area to prevent the island from starving.",
-      technologies: ["Unity", "C#", "Blender"],
+      technologies: ["UE5", "Blueprint", "Blender", "Substance Painter"],
       role: "Lead 3D Modeler",
       thumbnailImage: "/Images/Games/Fish/Fish6.JPG",
       features: [
-        "Procedurally generated ocean wave system",
+        "Custom designed bulding kitbash system",
         "Dynamic day and night cycle",
         "Procedurally animated fish models",
         "Logbook for caught fish history",
@@ -87,7 +87,7 @@ export default function GamesPage() {
         { src: "Images/Games/Cyber/Cyber6.JPG", alt: "Cyber Ninja - Inventory and crafting system" }
       ],
       type: "game",
-      youtubeUrl: "https://www.youtube.com/embed/vn_or9gEB6g?si=oqmxRu9XXa1I2L5E"
+      //youtubeUrl: "https://www.youtube.com/embed/vn_or9gEB6g?si=oqmxRu9XXa1I2L5E"
     },
     {
       title: "Door Horror",
@@ -112,7 +112,7 @@ export default function GamesPage() {
         { src: "/Images/Games/Door/Door6.JPG", alt: "Door Horror - Night club scene with unique lighting" }
       ],
       type: "game",
-      youtubeUrl: "https://www.youtube.com/embed/vn_or9gEB6g?si=oqmxRu9XXa1I2L5E"
+      //youtubeUrl: "https://www.youtube.com/embed/vn_or9gEB6g?si=oqmxRu9XXa1I2L5E"
     },
     {
       title: "A Space Moment",
@@ -137,7 +137,7 @@ export default function GamesPage() {
         { src: "/Images/Games/Space/Space6.JPG", alt: "A Space Moment - Night club scene with unique lighting" }
       ],
       type: "game",
-      youtubeUrl: "https://www.youtube.com/embed/vn_or9gEB6g?si=oqmxRu9XXa1I2L5E"
+      //youtubeUrl: "https://www.youtube.com/embed/vn_or9gEB6g?si=oqmxRu9XXa1I2L5E"
     },
     {
       title: "Lagoon Experience",
@@ -162,7 +162,7 @@ export default function GamesPage() {
         { src: "/Images/Games/Lagoon/Lagoon6.JPG", alt: "Lagoon Experience - Night club scene with unique lighting" }
       ],
       type: "game",
-      youtubeUrl: "https://www.youtube.com/embed/vn_or9gEB6g?si=oqmxRu9XXa1I2L5E"
+      //youtubeUrl: "https://www.youtube.com/embed/vn_or9gEB6g?si=oqmxRu9XXa1I2L5E"
     },
     {
       title: "Mower Madness",
@@ -188,7 +188,7 @@ export default function GamesPage() {
 
       ],
       type: "game",
-      youtubeUrl: "https://www.youtube.com/embed/vn_or9gEB6g?si=oqmxRu9XXa1I2L5E"
+      //youtubeUrl: "https://www.youtube.com/embed/vn_or9gEB6g?si=oqmxRu9XXa1I2L5E"
     }
   ];
 
