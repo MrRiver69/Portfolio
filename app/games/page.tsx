@@ -41,25 +41,25 @@ export default function GamesPage() {
     },
     {
       title: "Echoes of Ash",
-      description: "A fishing game with a focus on sustainability and conservation.",
-      longDescription: "Sustainable Shores is an open-world ocean exploration game where player, after getting lost at sea, finds an island with a starving population and must learn how to sustainable fish the area to prevent the island from starving.",
+      description: "A narrative-driven survival game set in the aftermath of war, where players explore a desolate Australian town shrouded in fog and mystery.",
+      longDescription: "The game follows the story of survivors navigating a destroyed and abandoned world, uncovering the remnants of society while facing the emotional and environmental scars left behind. It blends exploration and storytelling to create an immersive experience focused on atmosphere, survival, and human resilience.",
       technologies: ["UE5", "Blueprint", "Blender", "Substance Painter"],
       role: "Lead 3D Modeler",
-      thumbnailImage: "/Images/Games/Fish/Fish6.JPG",
+      thumbnailImage: "/Images/Games/Ash/Ash1.JPG",
       features: [
         "Custom designed bulding kitbash system",
-        "Dynamic day and night cycle",
-        "Procedurally animated fish models",
-        "Logbook for caught fish history",
-        "Fishing mini-game mechanic"
+        "Polaroid based cutscene system",
+        "Flare item location system",
+        "Level progression saving",
+        "Fully voice NPC interactions"
       ],
       images: [
-        { src: "/Images/Games/Fish/Fish6.JPG", alt: "Sustainable Shores - Character customization interface" },
-        { src: "/Images/Games/Fish/Fish1.JPG", alt: "Sustainable Shores - Spacecraft approaching a ringed planet" },
-        { src: "/Images/Games/Fish/Fish2.JPG", alt: "Sustainable Shores - Space station exterior" },
-        { src: "/Images/Games/Fish/Fish3.JPG", alt: "Sustainable Shores - Alien landscape with unique flora" },
-        { src: "/Images/Games/Fish/Fish4.JPG", alt: "Sustainable Shores - Trading interface and economy screen" },
-        { src: "/Images/Games/Fish/Fish5.JPG", alt: "Sustainable Shores - Character customization interface" }
+        { src: "/Images/Games/Ash/Ash1.JPG", alt: "Echoes of Ash - Main menu" },
+        { src: "/Images/Games/Ash/Ash3.JPG", alt: "Echoes of Ash - Start area" },
+        { src: "/Images/Games/Ash/Ash2.JPG", alt: "Echoes of Ash - Cutscene menu" },
+        { src: "/Images/Games/Ash/Ash4.JPG", alt: "Echoes of Ash - Environment exploration" },
+        { src: "/Images/Games/Ash/Ash5.JPG", alt: "Echoes of Ash - Environment exploration" },
+        { src: "/Images/Games/Ash/Ash6.JPG", alt: "Echoes of Ash - Environment exploration" }
       ],
       type: "game",
       youtubeUrl: "https://www.youtube.com/embed/hZ5wdAc_EC4?si=ok0z9v7kO-w3akS0"
