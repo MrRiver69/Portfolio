@@ -87,7 +87,7 @@ export default function GamesPage() {
         { src: "Images/Games/Cyber/Cyber6.JPG", alt: "Cyber Ninja - Inventory and crafting system" }
       ],
       type: "game",
-      //youtubeUrl: "https://www.youtube.com/embed/vn_or9gEB6g?si=oqmxRu9XXa1I2L5E"
+      youtubeUrl: "https://www.youtube.com/embed/a602Y2chA3k?si=jrwXIyWr1ssvdnCO"
     },
     {
       title: "Door Horror",
@@ -137,7 +137,7 @@ export default function GamesPage() {
         { src: "/Images/Games/Space/Space6.JPG", alt: "A Space Moment - Night club scene with unique lighting" }
       ],
       type: "game",
-      //youtubeUrl: "https://www.youtube.com/embed/vn_or9gEB6g?si=oqmxRu9XXa1I2L5E"
+      youtubeUrl: "https://www.youtube.com/embed/GoGXZq6FXRA?si=jJx3yiXztGUjYFPo"
     },
     {
       title: "Lagoon Experience",
@@ -162,7 +162,7 @@ export default function GamesPage() {
         { src: "/Images/Games/Lagoon/Lagoon6.JPG", alt: "Lagoon Experience - Night club scene with unique lighting" }
       ],
       type: "game",
-      //youtubeUrl: "https://www.youtube.com/embed/vn_or9gEB6g?si=oqmxRu9XXa1I2L5E"
+      youtubeUrl: "https://www.youtube.com/embed/JV-ZYbGIwYQ?si=d3q8gny5Zce9dbD8"
     },
     {
       title: "Mower Madness",
@@ -188,7 +188,7 @@ export default function GamesPage() {
 
       ],
       type: "game",
-      //youtubeUrl: "https://www.youtube.com/embed/vn_or9gEB6g?si=oqmxRu9XXa1I2L5E"
+      youtubeUrl: "https://www.youtube.com/embed/IvbdE3LTdMI?si=5DDDEObIkBncf4Mf"
     }
   ];
 
