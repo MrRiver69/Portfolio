@@ -252,6 +252,13 @@ export default function Home() {
                 Awarded for a cumulative GPA of at least 6.0, calculated over the academic year.
               </p>
             </div>
+            <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-medium mb-2 dark:text-white">People&apos;s Choice Award</h3>
+              <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">2025 GFS 24hr Game Jam</p>
+              <p className="text-gray-700 dark:text-gray-300">
+                Vumpkin received the People&apos;s Choice Award from the 2025 GFS 24hr game jam.
+              </p>
+            </div>
           </div>
         </div>
       </div>
