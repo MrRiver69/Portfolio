@@ -42,16 +42,16 @@ export default function GamesPage() {
     {
       title: "Vumpkin",
       description: "A Pumpkin farming sim developed in a 24hr Game Jam.",
-      longDescription: "Sustainable Shores is an open-world ocean exploration game where player, after getting lost at sea, finds an island with a starving population and must learn how to sustainable fish the area to prevent the island from starving.",
+      longDescription: "GROW pumpkins for your friends! Stack them into the car!! THEN GROW SOME MORE!!!! BUT BEWARE OF THE EVIL VUMPKINS!!.",
       technologies: ["Unity", "C#", "Blender", "Substance Painter"],
       role: "3D Modeler & Texture Artist",
       thumbnailImage: "/Images/Games/Vum/Vum.png",
       features: [
-        "Procedurally generated ocean wave system",
-        "Dynamic day and night cycle",
-        "Procedurally animated fish models",
-        "Logbook for caught fish history",
-        "Fishing mini-game mechanic"
+        "Stylised PSX style textures",
+        "Physics based interaction system",
+        "Vertical gameplay",
+        "Vumpkin grinder",
+        "VUMPKINSS!!!!!"
       ],
       images: [
         { src: "/Images/Games/Vum/Vum2.png", alt: "Vumpkin" },
