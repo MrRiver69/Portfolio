@@ -54,12 +54,12 @@ export default function GamesPage() {
         "Fishing mini-game mechanic"
       ],
       images: [
-        { src: "/Images/Games/Vum/Vum2.JPG", alt: "Vumpkin" },
-        { src: "/Images/Games/Vum/Vum4.JPG", alt: "Vumpkin" },
-        { src: "/Images/Games/Vum/Vum5.JPG", alt: "Vumpkin" },
-        { src: "/Images/Games/Vum/Vum6.JPG", alt: "Vumpkin" },
-        { src: "/Images/Games/Vum/Vum7.JPG", alt: "Vumpkin" },
-        { src: "/Images/Games/Vum/Vum1.JPG", alt: "Vumpkin" }
+        { src: "/Images/Games/Vum/Vum2.PNG", alt: "Vumpkin" },
+        { src: "/Images/Games/Vum/Vum4.PNG", alt: "Vumpkin" },
+        { src: "/Images/Games/Vum/Vum5.PNG", alt: "Vumpkin" },
+        { src: "/Images/Games/Vum/Vum6.PNG", alt: "Vumpkin" },
+        { src: "/Images/Games/Vum/Vum7.PNG", alt: "Vumpkin" },
+        { src: "/Images/Games/Vum/Vum1.PNG", alt: "Vumpkin" }
 
       ],
       type: "game",
