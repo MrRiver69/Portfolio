@@ -40,6 +40,32 @@ export default function GamesPage() {
       //youtubeUrl: "https://www.youtube.com/embed/vn_or9gEB6g?si=oqmxRu9XXa1I2L5E"
     },
     {
+      title: "Vumpkin",
+      description: "A Pumpkin farming sim developed in a 24hr Game Jam.",
+      longDescription: "Sustainable Shores is an open-world ocean exploration game where player, after getting lost at sea, finds an island with a starving population and must learn how to sustainable fish the area to prevent the island from starving.",
+      technologies: ["Unity", "C#", "Blender", "Substance Painter"],
+      role: "3D Modeler & Texture Artist",
+      thumbnailImage: "/Images/Games/Vum/Vum.JPG",
+      features: [
+        "Procedurally generated ocean wave system",
+        "Dynamic day and night cycle",
+        "Procedurally animated fish models",
+        "Logbook for caught fish history",
+        "Fishing mini-game mechanic"
+      ],
+      images: [
+        { src: "/Images/Games/Vum/Vum2.JPG", alt: "Vumpkin" },
+        { src: "/Images/Games/Vum/Vum4.JPG", alt: "Vumpkin" },
+        { src: "/Images/Games/Vum/Vum5.JPG", alt: "Vumpkin" },
+        { src: "/Images/Games/Vum/Vum6.JPG", alt: "Vumpkin" },
+        { src: "/Images/Games/Vum/Vum7.JPG", alt: "Vumpkin" },
+        { src: "/Images/Games/Vum/Vum1.JPG", alt: "Vumpkin" }
+
+      ],
+      type: "game",
+      //youtubeUrl: "https://www.youtube.com/embed/vn_or9gEB6g?si=oqmxRu9XXa1I2L5E"
+    },
+    {
       title: "Echoes of Ash",
       description: "A narrative-driven survival game set in the aftermath of war, where players explore a desolate Australian town shrouded in fog and mystery.",
       longDescription: "The game follows the story of survivors navigating a destroyed and abandoned world, uncovering the remnants of society while facing the emotional and environmental scars left behind. It blends exploration and storytelling to create an immersive experience focused on atmosphere, survival, and human resilience.",
