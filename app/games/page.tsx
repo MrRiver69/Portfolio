@@ -45,7 +45,7 @@ export default function GamesPage() {
       longDescription: "Sustainable Shores is an open-world ocean exploration game where player, after getting lost at sea, finds an island with a starving population and must learn how to sustainable fish the area to prevent the island from starving.",
       technologies: ["Unity", "C#", "Blender", "Substance Painter"],
       role: "3D Modeler & Texture Artist",
-      thumbnailImage: "/Images/Games/Vum/Vum.JPG",
+      thumbnailImage: "/Images/Games/Vum/Vum.png",
       features: [
         "Procedurally generated ocean wave system",
         "Dynamic day and night cycle",
@@ -54,12 +54,12 @@ export default function GamesPage() {
         "Fishing mini-game mechanic"
       ],
       images: [
-        { src: "/Images/Games/Vum/Vum2.PNG", alt: "Vumpkin" },
-        { src: "/Images/Games/Vum/Vum4.PNG", alt: "Vumpkin" },
-        { src: "/Images/Games/Vum/Vum5.PNG", alt: "Vumpkin" },
-        { src: "/Images/Games/Vum/Vum6.PNG", alt: "Vumpkin" },
-        { src: "/Images/Games/Vum/Vum7.PNG", alt: "Vumpkin" },
-        { src: "/Images/Games/Vum/Vum1.PNG", alt: "Vumpkin" }
+        { src: "/Images/Games/Vum/Vum2.png", alt: "Vumpkin" },
+        { src: "/Images/Games/Vum/Vum4.png", alt: "Vumpkin" },
+        { src: "/Images/Games/Vum/Vum5.png", alt: "Vumpkin" },
+        { src: "/Images/Games/Vum/Vum6.png", alt: "Vumpkin" },
+        { src: "/Images/Games/Vum/Vum7.png", alt: "Vumpkin" },
+        { src: "/Images/Games/Vum/Vum1.png", alt: "Vumpkin" }
 
       ],
       type: "game",
