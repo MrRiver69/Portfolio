@@ -12,6 +12,32 @@ export default function Home() {
   // Sample projects and models data - these would normally be fetched from a database or API
   const gameProjects: GameProjectDetails[] = [
     {
+      title: "Vumpkin",
+      description: "A Pumpkin farming sim developed in a 24hr Game Jam.",
+      longDescription: "GROW pumpkins for your friends! Stack them into the car!! THEN GROW SOME MORE!!!! BUT BEWARE OF THE EVIL VUMPKINS!!.",
+      technologies: ["Unity", "C#", "Blender", "Substance Painter"],
+      role: "3D Modeler & Texture Artist",
+      thumbnailImage: "/Images/Games/Vum/Vum.png",
+      features: [
+        "Stylised PSX style textures",
+        "Physics based interaction system",
+        "Vertical gameplay",
+        "Vumpkin grinder",
+        "VUMPKINSS!!!!!"
+      ],
+      images: [
+        { src: "/Images/Games/Vum/Vum2.png", alt: "Vumpkin" },
+        { src: "/Images/Games/Vum/Vum4.png", alt: "Vumpkin" },
+        { src: "/Images/Games/Vum/Vum5.png", alt: "Vumpkin" },
+        { src: "/Images/Games/Vum/Vum6.png", alt: "Vumpkin" },
+        { src: "/Images/Games/Vum/Vum7.png", alt: "Vumpkin" },
+        { src: "/Images/Games/Vum/Vum1.png", alt: "Vumpkin" }
+
+      ],
+      type: "game",
+      //youtubeUrl: "https://www.youtube.com/embed/vn_or9gEB6g?si=oqmxRu9XXa1I2L5E"
+    },
+    {
       title: "Sustainable Shores",
       description: "A fishing game with a focus on sustainability and conservation.",
       longDescription: "Sustainable Shores is an open-world ocean exploration game where player, after getting lost at sea, finds an island with a starving population and must learn how to sustainable fish the area to prevent the island from starving.",
@@ -60,58 +86,32 @@ export default function Home() {
       ],
       type: "game",
       youtubeUrl: "https://www.youtube.com/embed/a602Y2chA3k?si=jrwXIyWr1ssvdnCO"
-    },
-    {
-      title: "Door Horror",
-      description: "A mirco puzzle horror experience.",
-      longDescription: "Door Horror is a short horror game where the player must solve a series of puzzles to unlock various doors to find the exit.",
-      technologies: ["Unity", "C#", "Blender", "Substance Painter"],
-      role: "Lead Programmer and Game Designer",
-      thumbnailImage: "/Images/Games/Door/Door5.JPG",
-      features: [
-        "Features four unique puzzles for the player to solve",
-        "Unique stylized model textures",
-        "Ramping difficulty curve and horror elements",
-        "Each level has a unique theme and atmosphere",
-        "Minimalistic UI and HUD"
-      ],
-      images: [
-        { src: "/Images/Games/Door/Door1.JPG", alt: "Door Horror - Neon-lit cityscape view" },
-        { src: "/Images/Games/Door/Door2.JPG", alt: "Door Horror - Character dialogue system" },
-        { src: "/Images/Games/Door/Door3.JPG", alt: "Door Horror - Evidence board investigation" },
-        { src: "/Images/Games/Door/Door4.JPG", alt: "Door Horror - Abandoned subway environment" },
-        { src: "/Images/Games/Door/Door5.JPG", alt: "Door Horror - Night club scene with unique lighting" },
-        { src: "/Images/Games/Door/Door6.JPG", alt: "Door Horror - Night club scene with unique lighting" }
-      ],
-      type: "game",
-      //youtubeUrl: "https://www.youtube.com/embed/vn_or9gEB6g?si=oqmxRu9XXa1I2L5E"
     }
   ];
 
   const modelProjects: ModelProjectDetails[] = [
     {
-      title: "Buff Character Model",
-      description: "A set of fantasy and sci-fi weapons with detailed modeling and texturing for game assets.",
-      longDescription: "This weapons collection features a diverse range of both fantasy and sci-fi themed arms designed for action RPGs and first-person shooters. Each weapon has been crafted with meticulous attention to detail, with realistic materials and moving parts where appropriate. The collection includes swords, axes, futuristic firearms, and energy weapons, each with multiple texture variations.",
-      software: ["Maya", "Photo Shop"],
-      polygons: "8,000 - 15,000 per weapon",
+      title: "Hollow Knight Model",
+      description: "High-Poly Hollow Knight Model.",
+      longDescription: "This is a high-poly hollow knight model, featuring the Knight, Hornet, and the Grub was created and textured in Blender for the purpose of 3d printing.",
+      software: ["Blender"],
+      polygons: "14,300,000",
       features: [
-        "First-person and third-person optimized versions",
-        "Multiple material variations for each weapon",
-        "Animated components (triggers, magazines, etc.)",
-        "Impact and damage decal textures",
-        "Full PBR workflow with metallic/roughness maps"
+        "Fully modelled and textured in Blender",
+        "Finalised as high-poly for 3d printing",
+        "No smooth shading was used for rendered images"
+
       ],
-      thumbnailImage: "/Images/Models/Buff Character/Buff.JPG",
+      thumbnailImage: "/Images/Models/Hollow/Hollow.JPG",
       images: [
-        { src: "/Images/Models/Buff Character/Buff.JPG", alt: "Buff Character Model - Fantasy weapons display" },
-        { src: "/Images/Models/Buff Character/BuffUntextured.JPG", alt: "Buff Character Model - Sci-fi weapons display" },
-        { src: "/Images/Models/Buff Character/BuffWireframe.JPG", alt: "Buff Character Model - Detail shots of craftsmanship" },
-        { src: "/Images/Models/Buff Character/BuffWireframe2.JPG", alt: "Buff Character Model - Material variation examples" }
+        { src: "/Images/Models/Hollow/Hollow.JPG", alt: "Hollow Knight" },
+        { src: "/Images/Models/Hollow/Hollow1.JPG", alt: "Hollow Knight" },
+        { src: "/Images/Models/Hollow/Hollow2.JPG", alt: "Hollow Knight" },
+        { src: "/Images/Models/Hollow/Hollow3.JPG", alt: "Hollow Knight" }
       ],
       type: "model",
-      //splineUrl: "https://my.spline.design/buffcharactermodel-de81e6f87823bfa9c6b3d1576bee8236/",
-      //embeddedHtml: "<iframe src='https://my.spline.design/buffcharactermodel-de81e6f87823bfa9c6b3d1576bee8236/' frameborder='0' width='100%' height='100%'></iframe>",
+      //splineUrl: "https://my.spline.design/boatmodel-18e273eae9b4e97008d048648bdb0b9c/",
+      //embeddedHtml: "<iframe src='https://my.spline.design/boatmodel-18e273eae9b4e97008d048648bdb0b9c/' frameborder='0' width='100%' height='100%'></iframe>",
       //youtubeUrl: "https://www.youtube.com/embed/vn_or9gEB6g?si=oqmxRu9XXa1I2L5E"
     },
     {
