@@ -134,7 +134,7 @@ export default function ModelsPage() {
       polygons: "22,000 (game-ready model) / 797,000 (High-Poly)",
       features: [
         "Fully modelled in Blender",
-        "Textured in Substance P",
+        "Textured in Substance Painter",
         "Used for a live scene in UE5"
       ],
       thumbnailImage: "/Images/Models/T-Rex Skull/TrexSkull.jpg",
