@@ -13,7 +13,7 @@ export default function AboutMe() {
       </p>
       <p className="mb-4">
         For me, games are more than just entertainment they’re experiences that can make people feel something, think differently, or just escape for a while.
-        or just escape for a while. That’s what drives me to keep creating and exploring new ideas.
+        That’s what drives me to keep creating and exploring new ideas.
       </p>
     </div>
   );
