@@ -2,18 +2,18 @@ export default function AboutMe() {
   return (
     <div className="max-w-3xl mx-auto dark:text-gray-300">
       <p className="mb-4">
-        I am a passionate game designer and 3D modeler with experience in creating immersive gaming experiences. 
-        My expertise lies in conceptualizing and developing engaging gameplay mechanics, level design, 
-        and creating detailed 3D models that enhance the player's experience.
+        Hey! I’m a game designer and 3D modeler who loves building worlds and experiences that players can really connect with. 
+        I enjoy every part of the process, from coming up with ideas and designing gameplay, 
+        to modeling environments and making sure everything feels alive and immersive.
       </p>
       <p className="mb-4">
-        With a background in both technical and creative aspects of game development, 
-        I bring a unique perspective to every project I work on. I'm proficient in industry-standard 
-        tools and technologies, and I'm constantly expanding my skill set to stay at the forefront of game design innovation.
+        I’ve always loved the balance between the creative and technical sides of game development.
+        Whether I’m experimenting with new tools or refining my workflow,
+        I’m always looking for ways to grow and push my skills further.
       </p>
       <p className="mb-4">
-        I believe in creating games that not only entertain but also provide meaningful experiences for players. 
-        My goal is to push the boundaries of what's possible in game design while maintaining a focus on player engagement and satisfaction.
+        For me, games are more than just entertainment they’re experiences that can make people feel something, think differently, or just escape for a while.
+        or just escape for a while. That’s what drives me to keep creating and exploring new ideas.
       </p>
     </div>
   );
