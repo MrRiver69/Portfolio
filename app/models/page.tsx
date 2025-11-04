@@ -10,30 +10,6 @@ export default function ModelsPage() {
   // Sample 3D models - these would be replaced with actual models and images
   const models: ModelProjectDetails[] = [
     {
-      title: "Boat Model",
-      description: "Low-Poly Tug Boat Model.",
-      longDescription: "This is a low-poly tug boat model that was created and textured in Blender.",
-      software: ["Blender", "Unity"],
-      polygons: "2,900",
-      features: [
-        "Fully modelled and textured in Blender",
-        "Used as the players boat in Sustainable Shores",
-        "Simplistic design for low-poly optimization"
-
-      ],
-      thumbnailImage: "/Images/Models/Boat/BoatTextured.JPG",
-      images: [
-        { src: "/Images/Models/Boat/BoatTextured.JPG", alt: "Boat Model - Exterior hull view" },
-        { src: "/Images/Models/Boat/BoatUntextured.JPG", alt: "Boat Model - Cockpit interior" },
-        { src: "/Images/Models/Boat/BoatWireframe.JPG", alt: "Boat Model - Engine detail" },
-        { src: "/Images/Models/Boat/BoatWireframe2.JPG", alt: "Boat Model - Wireframe view" }
-      ],
-      type: "model",
-      //splineUrl: "https://my.spline.design/boatmodel-18e273eae9b4e97008d048648bdb0b9c/",
-      //embeddedHtml: "<iframe src='https://my.spline.design/boatmodel-18e273eae9b4e97008d048648bdb0b9c/' frameborder='0' width='100%' height='100%'></iframe>",
-      //youtubeUrl: "https://www.youtube.com/embed/vn_or9gEB6g?si=oqmxRu9XXa1I2L5E"
-    },
-    {
       title: "Hollow Knight Model",
       description: "High-Poly Hollow Knight Model.",
       longDescription: "This is a high-poly hollow knight model, featuring the Knight, Hornet, and the Grub was created and textured in Blender for the purpose of 3d printing.",
@@ -51,6 +27,76 @@ export default function ModelsPage() {
         { src: "/Images/Models/Hollow/Hollow1.JPG", alt: "Hollow Knight" },
         { src: "/Images/Models/Hollow/Hollow2.JPG", alt: "Hollow Knight" },
         { src: "/Images/Models/Hollow/Hollow3.JPG", alt: "Hollow Knight" }
+      ],
+      type: "model",
+      //splineUrl: "https://my.spline.design/boatmodel-18e273eae9b4e97008d048648bdb0b9c/",
+      //embeddedHtml: "<iframe src='https://my.spline.design/boatmodel-18e273eae9b4e97008d048648bdb0b9c/' frameborder='0' width='100%' height='100%'></iframe>",
+      //youtubeUrl: "https://www.youtube.com/embed/vn_or9gEB6g?si=oqmxRu9XXa1I2L5E"
+    },
+    {
+      title: "Japanese Tea Pot Model",
+      description: "High-Poly Japanese Style Teapot",
+      longDescription: "This is a high-poly japanese styled teapot model that was created in Maya and textured in Substance Painter",
+      software: ["Maya", "Substance Painter"],
+      polygons: "18,100",
+      features: [
+        "Fully modelled and rendered in Maya",
+        "Textured in Substance Painter",
+        "High detail design for realistic render"
+      ],
+      thumbnailImage: "/Images/Models/TeaPot/TeaPot.jpg",
+      images: [
+        { src: "/Images/Models/TeaPot/TeaPot.jpg", alt: "Japanese Tea Pot Model - Tea House Interior" },
+        { src: "/Images/Models/TeaPot/Untextured.jpg", alt: "Japanese Tea Pot Model - Untextured model" },
+        { src: "/Images/Models/TeaPot/Textured.jpg", alt: "Japanese Tea Pot Model - Textured model" },
+        { src: "/Images/Models/TeaPot/PostProcessed.jpg", alt: "Japanese Tea Pot Model - Tea House Environment" }
+      ],
+      type: "model",
+      //splineUrl: "https://my.spline.design/teapotmodel-daec9e3405c5da821d34e8d86ba7127f/",
+      //embeddedHtml: "<iframe src='https://my.spline.design/teapotmodel-daec9e3405c5da821d34e8d86ba7127f/' frameborder='0' width='100%' height='100%'></iframe>",
+      //youtubeUrl: "https://www.youtube.com/embed/vn_or9gEB6g?si=oqmxRu9XXa1I2L5E"
+    },
+    {
+      title: "Buff Character Model",
+      description: "High-Poly Stylized Character Model.",
+      longDescription: "This is a high-poly stylized character model that was created in Maya and textured in Photoshop.",
+      software: ["Maya", "Photoshop"],
+      polygons: "158,700",
+      features: [
+        "Fully modelled, rigged and rendered in Maya",
+        "Textured in Photoshop",
+        "Designed for animation"
+      ],
+      thumbnailImage: "/Images/Models/Buff Character/Buff.JPG",
+      images: [
+        { src: "/Images/Models/Buff Character/Buff.JPG", alt: "Buff Character Model - Fantasy weapons display" },
+        { src: "/Images/Models/Buff Character/BuffUntextured.JPG", alt: "Buff Character Model - Sci-fi weapons display" },
+        { src: "/Images/Models/Buff Character/BuffWireframe.JPG", alt: "Buff Character Model - Detail shots of craftsmanship" },
+        { src: "/Images/Models/Buff Character/BuffWireframe2.JPG", alt: "Buff Character Model - Material variation examples" }
+      ],
+      type: "model",
+      //splineUrl: "https://my.spline.design/buffcharactermodel-de81e6f87823bfa9c6b3d1576bee8236/",
+      //embeddedHtml: "<iframe src='https://my.spline.design/buffcharactermodel-de81e6f87823bfa9c6b3d1576bee8236/' frameborder='0' width='100%' height='100%'></iframe>",
+      //youtubeUrl: "https://www.youtube.com/embed/vn_or9gEB6g?si=oqmxRu9XXa1I2L5E"
+    },
+    {
+      title: "Boat Model",
+      description: "Low-Poly Tug Boat Model.",
+      longDescription: "This is a low-poly tug boat model that was created and textured in Blender.",
+      software: ["Blender", "Unity"],
+      polygons: "2,900",
+      features: [
+        "Fully modelled and textured in Blender",
+        "Used as the players boat in Sustainable Shores",
+        "Simplistic design for low-poly optimization"
+
+      ],
+      thumbnailImage: "/Images/Models/Boat/BoatTextured.JPG",
+      images: [
+        { src: "/Images/Models/Boat/BoatTextured.JPG", alt: "Boat Model - Exterior hull view" },
+        { src: "/Images/Models/Boat/BoatUntextured.JPG", alt: "Boat Model - Cockpit interior" },
+        { src: "/Images/Models/Boat/BoatWireframe.JPG", alt: "Boat Model - Engine detail" },
+        { src: "/Images/Models/Boat/BoatWireframe2.JPG", alt: "Boat Model - Wireframe view" }
       ],
       type: "model",
       //splineUrl: "https://my.spline.design/boatmodel-18e273eae9b4e97008d048648bdb0b9c/",
@@ -79,52 +125,6 @@ export default function ModelsPage() {
       //splineUrl: "https://my.spline.design/oilrigmodelcopy-8e96cf1b7ca5e7fed09dbc3183777984/",
       //embeddedHtml: "<iframe src='https://my.spline.design/oilrigmodelcopy-8e96cf1b7ca5e7fed09dbc3183777984/' frameborder='0' width='100%' height='100%'></iframe>",
       youtubeUrl: "https://www.youtube.com/embed/Z9C4lYa-RWM?si=zxpCI_BPV5hCh7WA"
-    },
-    {
-      title: "Japanese Tea Pot Model",
-      description: "High-Poly Japanese Style Teapot",
-      longDescription: "This is a high-poly japanese styled teapot model that was created in Maya and textured in Substance Painter",
-      software: ["Maya", "Substance Painter"],
-      polygons: "Variable (1,000 - 15,000 per asset)",
-      features: [
-        "Fully modelled and rendered in Maya",
-        "Textured in Substance Painter",
-        "High detail design for realistic render"
-      ],
-      thumbnailImage: "/Images/Models/TeaPot/TeaPot.jpg",
-      images: [
-        { src: "/Images/Models/TeaPot/TeaPot.jpg", alt: "Japanese Tea Pot Model - Tea House Interior" },
-        { src: "/Images/Models/TeaPot/Untextured.jpg", alt: "Japanese Tea Pot Model - Untextured model" },
-        { src: "/Images/Models/TeaPot/Textured.jpg", alt: "Japanese Tea Pot Model - Textured model" },
-        { src: "/Images/Models/TeaPot/PostProcessed.jpg", alt: "Japanese Tea Pot Model - Tea House Environment" }
-      ],
-      type: "model",
-      //splineUrl: "https://my.spline.design/teapotmodel-daec9e3405c5da821d34e8d86ba7127f/",
-      //embeddedHtml: "<iframe src='https://my.spline.design/teapotmodel-daec9e3405c5da821d34e8d86ba7127f/' frameborder='0' width='100%' height='100%'></iframe>",
-      //youtubeUrl: "https://www.youtube.com/embed/vn_or9gEB6g?si=oqmxRu9XXa1I2L5E"
-    },
-    {
-      title: "Buff Character Model",
-      description: "High-Poly Stylized Character Model.",
-      longDescription: "This is a high-poly stylized character model that was created in Maya and textured in Photoshop.",
-      software: ["Maya", "Photoshop"],
-      polygons: "8,000 - 15,000 per weapon",
-      features: [
-        "Fully modelled, rigged and rendered in Maya",
-        "Textured in Photoshop",
-        "Designed for animation"
-      ],
-      thumbnailImage: "/Images/Models/Buff Character/Buff.JPG",
-      images: [
-        { src: "/Images/Models/Buff Character/Buff.JPG", alt: "Buff Character Model - Fantasy weapons display" },
-        { src: "/Images/Models/Buff Character/BuffUntextured.JPG", alt: "Buff Character Model - Sci-fi weapons display" },
-        { src: "/Images/Models/Buff Character/BuffWireframe.JPG", alt: "Buff Character Model - Detail shots of craftsmanship" },
-        { src: "/Images/Models/Buff Character/BuffWireframe2.JPG", alt: "Buff Character Model - Material variation examples" }
-      ],
-      type: "model",
-      //splineUrl: "https://my.spline.design/buffcharactermodel-de81e6f87823bfa9c6b3d1576bee8236/",
-      //embeddedHtml: "<iframe src='https://my.spline.design/buffcharactermodel-de81e6f87823bfa9c6b3d1576bee8236/' frameborder='0' width='100%' height='100%'></iframe>",
-      //youtubeUrl: "https://www.youtube.com/embed/vn_or9gEB6g?si=oqmxRu9XXa1I2L5E"
     },
     {
       title: "T-Rex Skull Model",
