@@ -43,7 +43,7 @@ interface ProjectDetailModalProps {
 
 export default function ProjectDetailModal({ isOpen, onClose, project }: ProjectDetailModalProps) {
   const [activeImageIndex, setActiveImageIndex] = useState(0);
-  const [showSpline, setShowSpline] = useState(project.type === 'model');
+  const [showSpline, setShowSpline] = useState(false);
   const [showYouTube, setShowYouTube] = useState(false);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [transitionStyles, setTransitionStyles] = useState({});
@@ -53,7 +53,7 @@ export default function ProjectDetailModal({ isOpen, onClose, project }: Project
   const thumbnailRefs = useRef<(HTMLButtonElement | null)[]>([]);
 
   // Show Spline button for model projects
-  const showSplineButton = project.type === 'model';
+  const showSplineButton = false;
   // Show YouTube button if URL is provided
   const showYouTubeButton = !!project.youtubeUrl;
   
