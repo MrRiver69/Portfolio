@@ -34,11 +34,35 @@ export default function ModelsPage() {
       //youtubeUrl: "https://www.youtube.com/embed/vn_or9gEB6g?si=oqmxRu9XXa1I2L5E"
     },
     {
+      title: "Hollow Knight Model",
+      description: "High-Poly Hollow Knight Model.",
+      longDescription: "This is a high-poly hollow knight model, featuring the Knight, Hornet, and the Grub was created and textured in Blender for the purpose of 3d printing.",
+      software: ["Blender"],
+      polygons: "2,900",
+      features: [
+        "Fully modelled and textured in Blender",
+        "Finalised as high-poly for 3d printing",
+        "No smooth shading was used for rendered images"
+
+      ],
+      thumbnailImage: "/Images/Models/Boat/BoatTextured.JPG",
+      images: [
+        { src: "/Images/Models/Boat/BoatTextured.JPG", alt: "Boat Model - Exterior hull view" },
+        { src: "/Images/Models/Boat/BoatUntextured.JPG", alt: "Boat Model - Cockpit interior" },
+        { src: "/Images/Models/Boat/BoatWireframe.JPG", alt: "Boat Model - Engine detail" },
+        { src: "/Images/Models/Boat/BoatWireframe2.JPG", alt: "Boat Model - Wireframe view" }
+      ],
+      type: "model",
+      //splineUrl: "https://my.spline.design/boatmodel-18e273eae9b4e97008d048648bdb0b9c/",
+      //embeddedHtml: "<iframe src='https://my.spline.design/boatmodel-18e273eae9b4e97008d048648bdb0b9c/' frameborder='0' width='100%' height='100%'></iframe>",
+      //youtubeUrl: "https://www.youtube.com/embed/vn_or9gEB6g?si=oqmxRu9XXa1I2L5E"
+    },
+    {
       title: "Oil Rig Model",
       description: "Low-Poly Oil Rig Model.",
       longDescription: "This is a low-poly oil rig model that was created, rigged, and animated in Blender, and textured in Substance Painter.",
       software: ["Blender", "Substance Painter", "Unity"],
-      polygons: "2.5 million (high-poly) / 85,000 (game-ready)",
+      polygons: "2,800",
       features: [
         "Fully modelled and animated in Blender",
         "Used as the outpost in Sustainable Shores",
@@ -107,10 +131,10 @@ export default function ModelsPage() {
       description: "High-Poly Realistic T-Rex Skull Model.",
       longDescription: "This is a high-poly realistic t-rex skull model that was created in Blender, textured in Substance Painter, and rendered in Unreal Engine.",
       software: ["Blender", "Substance Painter", "Unreal Engine"],
-      polygons: "80,000 (in-game model) / 5 million (cinematic version)",
+      polygons: "22,000 (game-ready model) / 797,000 (High-Poly)",
       features: [
         "Fully modelled in Blender",
-        "Textured in Maya",
+        "Textured in Substance P",
         "Used for a live scene in UE5"
       ],
       thumbnailImage: "/Images/Models/T-Rex Skull/TrexSkull.jpg",
