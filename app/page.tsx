@@ -35,7 +35,7 @@ export default function Home() {
 
       ],
       type: "game",
-      //youtubeUrl: "https://www.youtube.com/embed/vn_or9gEB6g?si=oqmxRu9XXa1I2L5E"
+      youtubeUrl: "https://www.youtube.com/embed/htHxMoIgV7c?si=rKZMb7G3sIE0ijQM"
     },
     {
       title: "Sustainable Shores",
