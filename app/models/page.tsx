@@ -34,29 +34,6 @@ export default function ModelsPage() {
       //youtubeUrl: "https://www.youtube.com/embed/vn_or9gEB6g?si=oqmxRu9XXa1I2L5E"
     },
     {
-      title: "Japanese Tea Pot Model",
-      description: "High-Poly Japanese Style Teapot",
-      longDescription: "This is a high-poly japanese styled teapot model that was created in Maya and textured in Substance Painter",
-      software: ["Maya", "Substance Painter"],
-      polygons: "18,100",
-      features: [
-        "Fully modelled and rendered in Maya",
-        "Textured in Substance Painter",
-        "High detail design for realistic render"
-      ],
-      thumbnailImage: "/Images/Models/TeaPot/TeaPot.jpg",
-      images: [
-        { src: "/Images/Models/TeaPot/TeaPot.jpg", alt: "Japanese Tea Pot Model - Tea House Interior" },
-        { src: "/Images/Models/TeaPot/Untextured.jpg", alt: "Japanese Tea Pot Model - Untextured model" },
-        { src: "/Images/Models/TeaPot/Textured.jpg", alt: "Japanese Tea Pot Model - Textured model" },
-        { src: "/Images/Models/TeaPot/PostProcessed.jpg", alt: "Japanese Tea Pot Model - Tea House Environment" }
-      ],
-      type: "model",
-      //splineUrl: "https://my.spline.design/teapotmodel-daec9e3405c5da821d34e8d86ba7127f/",
-      //embeddedHtml: "<iframe src='https://my.spline.design/teapotmodel-daec9e3405c5da821d34e8d86ba7127f/' frameborder='0' width='100%' height='100%'></iframe>",
-      //youtubeUrl: "https://www.youtube.com/embed/vn_or9gEB6g?si=oqmxRu9XXa1I2L5E"
-    },
-    {
       title: "Buff Character Model",
       description: "High-Poly Stylized Character Model.",
       longDescription: "This is a high-poly stylized character model that was created in Maya and textured in Photoshop.",
@@ -101,6 +78,29 @@ export default function ModelsPage() {
       type: "model",
       //splineUrl: "https://my.spline.design/boatmodel-18e273eae9b4e97008d048648bdb0b9c/",
       //embeddedHtml: "<iframe src='https://my.spline.design/boatmodel-18e273eae9b4e97008d048648bdb0b9c/' frameborder='0' width='100%' height='100%'></iframe>",
+      //youtubeUrl: "https://www.youtube.com/embed/vn_or9gEB6g?si=oqmxRu9XXa1I2L5E"
+    },
+    {
+      title: "Japanese Tea Pot Model",
+      description: "High-Poly Japanese Style Teapot",
+      longDescription: "This is a high-poly japanese styled teapot model that was created in Maya and textured in Substance Painter",
+      software: ["Maya", "Substance Painter"],
+      polygons: "18,100",
+      features: [
+        "Fully modelled and rendered in Maya",
+        "Textured in Substance Painter",
+        "High detail design for realistic render"
+      ],
+      thumbnailImage: "/Images/Models/TeaPot/TeaPot.jpg",
+      images: [
+        { src: "/Images/Models/TeaPot/TeaPot.jpg", alt: "Japanese Tea Pot Model - Tea House Interior" },
+        { src: "/Images/Models/TeaPot/Untextured.jpg", alt: "Japanese Tea Pot Model - Untextured model" },
+        { src: "/Images/Models/TeaPot/Textured.jpg", alt: "Japanese Tea Pot Model - Textured model" },
+        { src: "/Images/Models/TeaPot/PostProcessed.jpg", alt: "Japanese Tea Pot Model - Tea House Environment" }
+      ],
+      type: "model",
+      //splineUrl: "https://my.spline.design/teapotmodel-daec9e3405c5da821d34e8d86ba7127f/",
+      //embeddedHtml: "<iframe src='https://my.spline.design/teapotmodel-daec9e3405c5da821d34e8d86ba7127f/' frameborder='0' width='100%' height='100%'></iframe>",
       //youtubeUrl: "https://www.youtube.com/embed/vn_or9gEB6g?si=oqmxRu9XXa1I2L5E"
     },
     {
