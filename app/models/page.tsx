@@ -38,19 +38,19 @@ export default function ModelsPage() {
       description: "High-Poly Hollow Knight Model.",
       longDescription: "This is a high-poly hollow knight model, featuring the Knight, Hornet, and the Grub was created and textured in Blender for the purpose of 3d printing.",
       software: ["Blender"],
-      polygons: "2,900",
+      polygons: "14,300,000",
       features: [
         "Fully modelled and textured in Blender",
         "Finalised as high-poly for 3d printing",
         "No smooth shading was used for rendered images"
 
       ],
-      thumbnailImage: "/Images/Models/Boat/BoatTextured.JPG",
+      thumbnailImage: "/Images/Models/Hollow/Hollow.JPG",
       images: [
-        { src: "/Images/Models/Boat/BoatTextured.JPG", alt: "Boat Model - Exterior hull view" },
-        { src: "/Images/Models/Boat/BoatUntextured.JPG", alt: "Boat Model - Cockpit interior" },
-        { src: "/Images/Models/Boat/BoatWireframe.JPG", alt: "Boat Model - Engine detail" },
-        { src: "/Images/Models/Boat/BoatWireframe2.JPG", alt: "Boat Model - Wireframe view" }
+        { src: "/Images/Models/Hollow/Hollow.JPG", alt: "Hollow Knight" },
+        { src: "/Images/Models/Hollow/Hollow1.JPG", alt: "Hollow Knight" },
+        { src: "/Images/Models/Hollow/Hollow2.JPG", alt: "Hollow Knight" },
+        { src: "/Images/Models/Hollow/Hollow3.JPG", alt: "Hollow Knight" }
       ],
       type: "model",
       //splineUrl: "https://my.spline.design/boatmodel-18e273eae9b4e97008d048648bdb0b9c/",
